@@ -13,7 +13,7 @@ env:
     - GIT_AUTHOR_EMAIL=inc@2inc.org
     - secure: "bIZ/Silr3OlwT695HOJzdSOVT2oqW5CW8o3MlRpYtYv+gSJJVse8B4aLxLuoUVoQmHbzTvkoM1FFIQXRvc10O8f5qyM3HBHsXmaisEZ9pSQpOn0kehjjJKGAXxvHEvYF6A5zIdYhdkYKueKu0phNWsrTPoZBNHykZIxs6R6fFjzBeLV2a2i/wFUvvNmblJub6sfxXknZYhSfNiZ0KZtXP2B4bcD5J8bq3sWA9H5bJkyqB3ze84QuXy0IWoVl0ciIOn4C/CnlOLvp8Z7Ho4bFWKwSCuK+v//6CPmPfsCAkckDeNsTIxOJn+3xUnpe17+g1RAVupIPgotKM0jw5TclKZrAJumF6aLHLvTtLDd0E8KBo3QfM7BkBsoJozXN1voaHf4PldAL3Tpy2sCxKY7BYtTBU/WvL3TpuI3ei4QVH7jpNIrefraLwk/xwF0c0dZHaqKDZ2d1qviyzpDjgzD/ongQL/i/eXpCbBYlCGxUDGzd+2Ne699ve8S3CsTm5ln22FguNQrGCjZFrMGczp2ptx0i7kFAlpeOVAGN3k5rbqhyCwhc1vjZxmduEwcFMnl1aQZMwk0/0PNHF/IocM1oUGDA0wymEAtmzn3wNCKLZHpcnO9trcfBkpqiXo1JbhFASGEbtEvriGI2KoTpndMk5y1rRe9md4eFVXK2oIj2gTE="
 before_script:
-  - git clone -b gh-pages --quiet https://github.com/sass-basis/basis.git gh-pages
+  - git clone -b master --quiet https://github.com/sass-basis/basis.git gh-pages
 script:
   - cd gh-pages
   - ls | xargs rm -rf
