@@ -25,7 +25,7 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
-    "sass-basis": "^4.3.2"
+    "sass-basis": "git://github.com/sass-basis/basis.git#develop"
   },
   "scripts": {
     "build": "gulp build",
