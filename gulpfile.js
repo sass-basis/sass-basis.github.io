@@ -13,24 +13,26 @@ var browserify   = require('browserify');
 var source       = require('vinyl-source-stream');
 var buffer       = require('vinyl-buffer');
 var babelify     = require('babelify');
-var browser_sync = require( 'browser-sync' );
-var ejs          = require( 'gulp-ejs' );
+var browser_sync = require('browser-sync');
+var ejs          = require('gulp-ejs');
 
 var path = {
   src: {
-    scss  : 'src/scss/**/*.scss',
-    js    : 'src/js/**.js',
-  	images: 'src/images/**/*.+(jpg|jpeg|png|gif|svg)',
+    scss   : 'src/scss/**/*.scss',
+    js     : 'src/js/**.js',
+  	images : 'src/images/**/*.+(jpg|jpeg|png|gif|svg)',
+    favicon: 'src/favicon.ico',
   	ejs : [
   		'src/ejs/**/*.ejs',
   		'!src/ejs/**/_*.ejs'
   	]
   },
   dist: {
-    css   : 'public/assets/css',
-    js    : 'public/assets/js',
-  	images: 'public/assets/images',
-  	ejs   : 'public',
+    css    : 'public/assets/css',
+    js     : 'public/assets/js',
+  	images : 'public/assets/images',
+    favicon: 'public',
+  	ejs    : 'public',
   }
 };
 
@@ -92,6 +94,10 @@ gulp.task( 'imagecopy', function(){
 	gulp.src( path.src.images )
 		.pipe( gulp.dest( path.dist.images ) );
 } );
+gulp.task( 'favicon', function(){
+  gulp.src( path.src.favicon )
+    .pipe( gulp.dest( path.dist.favicon ) );
+} );
 
 /**
  * Auto Compile Sass.
@@ -100,6 +106,7 @@ gulp.task('watch', function() {
   gulp.watch([path.src.scss], ['sass']);
   gulp.watch([path.src.js], ['js']);
   gulp.watch([path.src.images], ['imagecopy']);
+  gulp.watch([path.src.favicon], ['favicon']);
 });
 
 
@@ -130,6 +137,6 @@ gulp.task('deploy', ['build'], function() {
       .pipe(gulp.dest('gh-pages'));
 });
 
-gulp.task('build', ['sass', 'js', 'imagecopy', 'ejs']);
+gulp.task('build', ['sass', 'js', 'imagecopy', 'favicon', 'ejs']);
 
 gulp.task('default', ['build', 'browsersync', 'watch']);
