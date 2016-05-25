@@ -1,0 +1,874 @@
+<% var title = 'Component' %>
+<% include _layout/_head %>
+<body class="_l-body _c-drawer">
+
+<% include _object/_project/_drawer %>
+
+<div id="container" class="_l-container _l-container--overlay-header _l-container--sticky-footer">
+  <% include _layout/_header %>
+
+  <div id="contents" class="_l-contents">
+    <% include _object/_project/_hero %>
+
+    <div class="_c-container">
+      <div class="_c-row _c-row--margin-l">
+        <div class="_c-row__col _c-row__col--1-1 _c-row__col--lg-3-4">
+          <main id="main" class="_l-main" role="main">
+
+            <section class="c-section c-section--border" id="wrappers">
+              <h1 class="c-section__h1">Wrappers</h1>
+              <pre><code>&lt;div class="_c-container"&gt;
+...
+&lt/div&gt;</code></pre>
+
+              <pre><code>&lt;div class="_c-container-fluid"&gt;
+...
+&lt/div&gt;</code></pre>
+            </section>
+
+            <section class="c-section c-section--border" id="forms">
+              <h1 class="c-section__h1">Forms</h2>
+
+              <form>
+                <p>
+                  <input type="text" class="_c-form-control" placeholder="text" />
+                </p>
+                <p>
+                  <input type="text" class="_c-form-control" placeholder="readonly" readonly />
+                </p>
+                <p>
+                  <input type="text" class="_c-form-control" placeholder="disabled" disabled />
+                </p>
+                <p>
+                  <textarea class="_c-form-control" placeholder="textarea"></textarea>
+                </p>
+                <p>
+                  <select class="_c-form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </p>
+                <p>
+                  <label class="_c-checkbox"><input type="checkbox" />checkbox1</label>
+                  <label class="_c-checkbox"><input type="checkbox" />checkbox2</label>
+                </p>
+                <p>
+                  <span class="_c-checkbox _checkbox--block">
+                    <label><input type="checkbox" />checkbox1</label>
+                  </span>
+                  <span class="_c-checkbox _checkbox--block">
+                    <label><input type="checkbox" />checkbox2</label>
+                  </span>
+                </p>
+                <p>
+                  <label class="_c-radio"><input type="radio" name="radio-inline" />radio1</label>
+                  <label class="_c-radio"><input type="radio" name="radio-inline" />radio2</label>
+                </p>
+                <p>
+                  <span class="_c-radio _radio--block">
+                    <label><input type="radio" name="radio-block" />radio1</label>
+                  </span>
+                  <span class="_c-radio _radio--block">
+                    <label><input type="radio" name="radio-block" />radio2</label>
+                  </span>
+                </p>
+                <div class="_c-input-group">
+                  <div class="_c-input-group__addon">
+                    @
+                  </div>
+                  <div class="_c-input-group__field">
+                    <input type="text" class="_c-input-group__control" placeholder="text" />
+                  </div>
+                  <button class="_c-input-group__btn">Go</button>
+                </div>
+              </form>
+            </section>
+
+            <section class="c-section c-section--border" id="media">
+              <h1 class="c-section__h1">Media</h1>
+              <h2 class="c-section__h2">Standard</h2>
+              <pre><code>&lt;div class=&quot;_c-media&quot;&gt;
+&lt;div class=&quot;_c-media__figure&quot;&gt;
+&lt;div class=&quot;c-dummy-image&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;_c-media__body&quot;&gt;
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              <div class="_c-row _c-row--margin">
+                <div class="_c-row__col _c-row__col--1-1 _c-row__col--md-1-2">
+                  <div class="_c-media">
+                    <div class="_c-media__figure">
+                      <div class="c-dummy-image"></div>
+                    </div>
+                    <div class="_c-media__body">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                    </div>
+                  </div>
+                </div>
+                <div class="_c-row__col _c-row__col--1-1 _c-row__col--md-1-2">
+                  <div class="_c-media">
+                    <div class="_c-media__figure">
+                      <div class="c-dummy-image"></div>
+                    </div>
+                    <div class="_c-media__body">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h2 class="c-section__h2">Reverse</h2>
+              <pre><code>&lt;div class=&quot;_c-media _c-media--reverse&quot;&gt;
+&lt;div class=&quot;_c-media__figure&quot;&gt;
+&lt;div class=&quot;c-dummy-image&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;_c-media__body&quot;&gt;
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              <div class="_c-row _c-row--margin">
+                <div class="_c-row__col _c-row__col--1-1 _c-row__col--md-1-2">
+                  <div class="_c-media _c-media--reverse">
+                    <div class="_c-media__figure">
+                      <div class="c-dummy-image"></div>
+                    </div>
+                    <div class="_c-media__body">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                    </div>
+                  </div>
+                </div>
+                <div class="_c-row__col _c-row__col--1-1 _c-row__col--md-1-2">
+                  <div class="_c-media _c-media--reverse">
+                    <div class="_c-media__figure">
+                      <div class="c-dummy-image"></div>
+                    </div>
+                    <div class="_c-media__body">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h2 class="c-section__h2">Middle body</h2>
+              <pre><code>&lt;div class=&quot;_c-media _c-media--middle&quot;&gt;
+&lt;div class=&quot;_c-media__figure&quot;&gt;
+&lt;div class=&quot;c-dummy-image&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;_c-media__body&quot;&gt;
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              <div class="_c-row _c-row--margin">
+                <div class="_c-row__col _c-row__col--1-1 _c-row__col--md-1-2">
+                  <div class="_c-media _c-media--middle">
+                    <div class="_c-media__figure">
+                      <div class="c-dummy-image"></div>
+                    </div>
+                    <div class="_c-media__body">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                    </div>
+                  </div>
+                </div>
+                <div class="_c-row__col _c-row__col--1-1 _c-row__col--md-1-2">
+                  <div class="_c-media _c-media--middle">
+                    <div class="_c-media__figure">
+                      <div class="c-dummy-image"></div>
+                    </div>
+                    <div class="_c-media__body">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h2 class="c-section__h2">Nested</h2>
+              <pre><code>&lt;div class=&quot;_c-media&quot;&gt;
+&lt;div class=&quot;_c-media__figure&quot;&gt;
+&lt;div class=&quot;c-dummy-image&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;_c-media__body&quot;&gt;
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+
+&lt;div class=&quot;_c-media&quot;&gt;
+&lt;div class=&quot;_c-media__figure&quot;&gt;
+&lt;div class=&quot;c-dummy-image&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;_c-media__body&quot;&gt;
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;_c-media&quot;&gt;
+&lt;div class=&quot;_c-media__figure&quot;&gt;
+&lt;div class=&quot;c-dummy-image&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;_c-media__body&quot;&gt;
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              <div class="_c-media">
+                <div class="_c-media__figure">
+                  <div class="c-dummy-image"></div>
+                </div>
+                <div class="_c-media__body">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+
+                  <div class="_c-media">
+                    <div class="_c-media__figure">
+                      <div class="c-dummy-image"></div>
+                    </div>
+                    <div class="_c-media__body">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                    </div>
+                  </div>
+
+                  <div class="_c-media">
+                    <div class="_c-media__figure">
+                      <div class="c-dummy-image"></div>
+                    </div>
+                    <div class="_c-media__body">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="c-section c-section--border" id="grid-system">
+              <h1 class="c-section__h1">Grid system</h1>
+              <p>
+                Basis has 2 - 12 based grid system. For example <code>._c-row__col--1-2</code>, <code>._c-row__col--12-12</code>. When using responsive Grids, Adding the specific breakpoints at class names.  For example <code>._c-row__col--md-1-2</code>, <code>._c-row__col--md-12-12</code>.
+              </p>
+
+              <table class="table table--bordered">
+                <thead>
+                  <tr>
+                    <th>Key</th>
+                    <th>Applies</th>
+                    <th>Class name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>None</th>
+                    <td>Always</td>
+                    <td>._c-row__col--1-12</td>
+                  </tr>
+                  <tr>
+                    <th>md</th>
+                    <td>>= 640px</td>
+                    <td>._c-row__col--md-1-12</td>
+                  </tr>
+                  <tr>
+                    <th>lg</th>
+                    <td>>= 1024px</td>
+                    <td>._c-row__col--lg-1-12</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="_c-row p-show-grid">
+                <div class="_c-row__col _c-row__col--1-2">
+                  <div class="p-show-grid__item">1/2</div>
+                </div>
+                <div class="_c-row__col _c-row__col--1-2">
+                  <div class="p-show-grid__item p-show-grid__item--cloudy">1/2</div>
+                </div>
+              </div>
+              <div class="_c-row p-show-grid">
+                <div class="_c-row__col _c-row__col--1-3">
+                  <div class="p-show-grid__item">1/3</div>
+                </div>
+                <div class="_c-row__col _c-row__col--2-3">
+                  <div class="p-show-grid__item p-show-grid__item--cloudy">2/3</div>
+                </div>
+              </div>
+              <div class="_c-row p-show-grid">
+                <div class="_c-row__col _c-row__col--1-4">
+                  <div class="p-show-grid__item">1/4</div>
+                </div>
+                <div class="_c-row__col _c-row__col--3-4">
+                  <div class="p-show-grid__item p-show-grid__item--cloudy">3/4</div>
+                </div>
+              </div>
+              <div class="_c-row p-show-grid">
+                <div class="_c-row__col _c-row__col--1-5">
+                  <div class="p-show-grid__item">1/5</div>
+                </div>
+                <div class="_c-row__col _c-row__col--4-5">
+                  <div class="p-show-grid__item p-show-grid__item--cloudy">4/5</div>
+                </div>
+              </div>
+              <div class="_c-row p-show-grid">
+                <div class="_c-row__col _c-row__col--1-6">
+                  <div class="p-show-grid__item">1/6</div>
+                </div>
+                <div class="_c-row__col _c-row__col--5-6">
+                  <div class="p-show-grid__item p-show-grid__item--cloudy">5/6</div>
+                </div>
+              </div>
+              <div class="_c-row p-show-grid">
+                <div class="_c-row__col _c-row__col--1-7">
+                  <div class="p-show-grid__item">1/7</div>
+                </div>
+                <div class="_c-row__col _c-row__col--6-7">
+                  <div class="p-show-grid__item p-show-grid__item--cloudy">6/7</div>
+                </div>
+              </div>
+              <div class="_c-row p-show-grid">
+                <div class="_c-row__col _c-row__col--1-8">
+                  <div class="p-show-grid__item">1/8</div>
+                </div>
+                <div class="_c-row__col _c-row__col--7-8">
+                  <div class="p-show-grid__item p-show-grid__item--cloudy">7/8</div>
+                </div>
+              </div>
+              <div class="_c-row p-show-grid">
+                <div class="_c-row__col _c-row__col--1-9">
+                  <div class="p-show-grid__item">1/9</div>
+                </div>
+                <div class="_c-row__col _c-row__col--8-9">
+                  <div class="p-show-grid__item p-show-grid__item--cloudy">8/9</div>
+                </div>
+              </div>
+              <div class="_c-row p-show-grid">
+                <div class="_c-row__col _c-row__col--1-10">
+                  <div class="p-show-grid__item">1/10</div>
+                </div>
+                <div class="_c-row__col _c-row__col--9-10">
+                  <div class="p-show-grid__item p-show-grid__item--cloudy">9/10</div>
+                </div>
+              </div>
+              <div class="_c-row p-show-grid">
+                <div class="_c-row__col _c-row__col--1-11">
+                  <div class="p-show-grid__item">1/11</div>
+                </div>
+                <div class="_c-row__col _c-row__col--10-11">
+                  <div class="p-show-grid__item p-show-grid__item--cloudy">10/11</div>
+                </div>
+              </div>
+              <div class="_c-row p-show-grid">
+                <div class="_c-row__col _c-row__col--1-12">
+                  <div class="p-show-grid__item">1/12</div>
+                </div>
+                <div class="_c-row__col _c-row__col--11-12">
+                  <div class="p-show-grid__item p-show-grid__item--cloudy">11/12</div>
+                </div>
+              </div>
+
+              <h2 class="c-section__h2">Equal columns size</h2>
+
+              <pre><code>&lt;div class=&quot;_c-row&quot;&gt;
+&lt;div class=&quot;_c-row__col&quot;&gt;Lorem ipsum dolor sit amet&lt;/div&gt;
+&lt;div class=&quot;_c-row__col&quot;&gt;Consectetur&lt;/div&gt;
+&lt;div class=&quot;_c-row__col&quot;&gt;adipiscing&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+              <div class="_c-row p-show-grid">
+                <div class="_c-row__col"><div class="p-show-grid__item">Lorem ipsum dolor sit amet</div></div>
+                <div class="_c-row__col"><div class="p-show-grid__item">Consectetur</div></div>
+                <div class="_c-row__col"><div class="p-show-grid__item">adipiscing</div></div>
+              </div>
+
+              <h2 class="c-section__h2">Auto columns size</h2>
+
+              <pre><code>&lt;div class=&quot;_c-row _c-row--auto&quot;&gt;
+&lt;div class=&quot;_c-row__col&quot;&gt;Lorem ipsum dolor sit amet&lt;/div&gt;
+&lt;div class=&quot;_c-row__col&quot;&gt;Consectetur&lt;/div&gt;
+&lt;div class=&quot;_c-row__col&quot;&gt;adipiscing&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <div class="_c-row _c-row--auto p-show-grid">
+              <div class="_c-row__col"><div class="p-show-grid__item">Lorem ipsum dolor sit amet</div></div>
+              <div class="_c-row__col"><div class="p-show-grid__item">Consectetur</div></div>
+              <div class="_c-row__col"><div class="p-show-grid__item">adipiscing</div></div>
+            </div>
+
+            <h2 class="c-section__h2">Reverse columns order</h2>
+
+            <pre><code>&lt;div class=&quot;_c-row _c-row--reverse&quot;&gt;
+&lt;div class=&quot;_c-row__col&quot;&gt;1&lt;/div&gt;
+&lt;div class=&quot;_c-row__col&quot;&gt;2&lt;/div&gt;
+&lt;div class=&quot;_c-row__col&quot;&gt;3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <div class="_c-row _c-row--reverse p-show-grid">
+              <div class="_c-row__col"><div class="p-show-grid__item">1</div></div>
+              <div class="_c-row__col"><div class="p-show-grid__item">2</div></div>
+              <div class="_c-row__col"><div class="p-show-grid__item">3</div></div>
+            </div>
+
+            <h2 class="c-section__h2">Margin</h2>
+
+            <h3 class="c-section__h3">No margin</h3>
+            <p>
+              There is this also: <code>._c-row--md-collapse</code>, <code>._c-row--lg-collapse</code>
+            </p>
+            <pre><code>&lt;div class=&quot;_c-row _c-row--collapse&quot;&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <div class="_c-row _c-row--collapse p-show-grid">
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+            </div>
+
+            <h3 class="c-section__h3">Standard margin</h3>
+            <p>
+              There is this also: <code>._c-row--md-margin</code>, <code>._c-row--lg-margin</code>
+            </p>
+            <pre><code>&lt;div class=&quot;_c-row _c-row--margin&quot;&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <div class="_c-row _c-row--margin p-show-grid">
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+            </div>
+
+            <h3 class="c-section__h3">Small margin</h3>
+            <p>
+              There is this also: <code>._c-row--md-margin-s</code>, <code>._c-row--lg-margin-s</code>
+            </p>
+            <pre><code>&lt;div class=&quot;_c-row _c-row--margin-s&quot;&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <div class="_c-row _c-row--margin-s p-show-grid">
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+            </div>
+
+            <h3 class="c-section__h3">Large margin</h3>
+            <p>
+              There is this also: <code>._c-row--md-margin-l</code>, <code>._c-row--lg-margin-l</code>
+            </p>
+            <pre><code>&lt;div class=&quot;_c-row _c-row--margin-l&quot;&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <div class="_c-row _c-row--margin-l p-show-grid">
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+            </div>
+
+            <h2 class="c-section__h2">Nested</h2>
+
+            <pre><code>&lt;div class=&quot;_c-row&quot;&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-5&quot;&gt;
+&lt;div class=&quot;_c-row&quot;&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-2&quot;&gt;1/2&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-2&quot;&gt;1/2&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-5&quot;&gt;1/5&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-5&quot;&gt;1/5&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-5&quot;&gt;1/5&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-5&quot;&gt;1/5&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <div class="_c-row p-show-grid">
+              <div class="_c-row__col _c-row__col--1-5">
+                <div class="_c-row">
+                  <div class="_c-row__col _c-row__col--1-2">
+                    <div class="p-show-grid__item">1/2</div>
+                  </div>
+                  <div class="_c-row__col _c-row__col--1-2">
+                    <div class="p-show-grid__item">1/2</div>
+                  </div>
+                </div>
+              </div>
+              <div class="_c-row__col _c-row__col--1-5">
+                <div class="p-show-grid__item">1/5</div>
+              </div>
+              <div class="_c-row__col _c-row__col--1-5">
+                <div class="p-show-grid__item">1/5</div>
+              </div>
+              <div class="_c-row__col _c-row__col--1-5">
+                <div class="p-show-grid__item">1/5</div>
+              </div>
+              <div class="_c-row__col _c-row__col--1-5">
+                <div class="p-show-grid__item">1/5</div>
+              </div>
+            </div>
+
+            <h2 class="c-section__h2">Justify height</h2>
+
+            <p>
+              There is this also: <code>._c-row--md-fill</code>, <code>._c-row--lg-fill</code>
+            </p>
+            <pre><code>&lt;div class=&quot;_c-row _c-row--fill&quot;&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;&lt;div&gt;1/3&lt;br /&gt;1/3&lt;br /&gt;1/3&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;&lt;div&gt;1/3&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;&lt;div&gt;1/3&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <div class="_c-row _c-row--fill p-show-grid">
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3<br />1/3<br />1/3</div></div>
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+            </div>
+
+            <h2 class="c-section__h2">Offsets</h2>
+
+            <p>
+              There is this also: <code>._c-row__col--md-offset-x-x</code>, <code>._c-row__col--lg-offset-x-x</code>
+            </p>
+            <pre><code>&lt;div class=&quot;_c-row&quot;&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-4&quot;&gt;1/4&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-4&quot;&gt;1/4&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-4 _c-row__col--offset-1-4&quot;&gt;1/4&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <div class="_c-row p-show-grid">
+              <div class="_c-row__col _c-row__col--1-4">
+                <div class="p-show-grid__item">1/4</div>
+              </div>
+              <div class="_c-row__col _c-row__col--1-4">
+                <div class="p-show-grid__item">1/4</div>
+              </div>
+              <div class="_c-row__col _c-row__col--1-4 _c-row__col--offset-1-4">
+                <div class="p-show-grid__item">1/4</div>
+              </div>
+            </div>
+
+            <h2 class="c-section__h2">Devided in mobile, full in Desktop</h2>
+
+            <pre><code>&lt;div class=&quot;_c-row&quot;&gt;
+&lt;div class=&quot;_col _c-row__col--1-2 _c-row__col--md-2-2&quot;&gt;1&lt;/div&gt;
+&lt;div class=&quot;_col _c-row__col--1-2 _c-row__col--md-2-2&quot;&gt;1&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <div class="_c-row p-show-grid">
+              <div class="_c-row__col _c-row__col--1-2 _c-row__col--md-2-2">
+                <div class="p-show-grid__item">1</div>
+              </div>
+              <div class="_c-row__col _c-row__col--1-2 _c-row__col--md-2-2">
+                <div class="p-show-grid__item">1</div>
+              </div>
+            </div>
+
+            <h2 class="c-section__h2">Alignment</h2>
+
+            <h3 class="c-section__h3">Align left</h3>
+            <pre><code>&lt;div class=&quot;_c-row _c-row--left&quot;&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <div class="_c-row _c-row--left p-show-grid">
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+            </div>
+
+            <h3 class="c-section__h3">Align right</h3>
+            <pre><code>&lt;div class=&quot;_c-row _c-row--right&quot;&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <div class="_c-row _c-row--right p-show-grid">
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+            </div>
+
+            <h3 class="c-section__h3">Centering</h3>
+            <pre><code>&lt;div class=&quot;_c-row _c-row--center&quot;&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <div class="_c-row _c-row--center p-show-grid">
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+            </div>
+
+            <h3 class="c-section__h3">Between</h3>
+            <pre><code>&lt;div class=&quot;_c-row _c-row--between&quot;&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <div class="_c-row _c-row--between p-show-grid">
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+            </div>
+
+            <h3 class="c-section__h3">Around</h3>
+            <pre><code>&lt;div class=&quot;_c-row _c-row--around&quot;&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <div class="_c-row _c-row--around p-show-grid">
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+              <div class="_c-row__col _c-row__col--1-3"><div class="p-show-grid__item">1/3</div></div>
+            </div>
+
+            <h2 class="c-section__h2">Vertial alignment</h2>
+
+            <h3 class="c-section__h3">Top</h3>
+            <pre><code>&lt;div class=&quot;_c-row _c-row--top&quot;&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;br /&gt;1/3&lt;/br /&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;br /&gt;1/3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <div class="_c-row _c-row--top p-show-grid">
+              <div class="_c-row__col _c-row__col--1-3">
+                <div class="p-show-grid__item">1/3</div>
+              </div>
+              <div class="_c-row__col _c-row__col--1-3">
+                <div class="p-show-grid__item">1/3<br />1/3</br />1/3</div>
+              </div>
+              <div class="_c-row__col _c-row__col--1-3">
+                <div class="p-show-grid__item">1/3<br />1/3</div>
+              </div>
+            </div>
+
+            <h3 class="c-section__h3">Bottom</h3>
+            <pre><code>&lt;div class=&quot;_c-row _c-row--bottom&quot;&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;br /&gt;1/3&lt;/br /&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;br /&gt;1/3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <div class="_c-row _c-row--bottom p-show-grid">
+              <div class="_c-row__col _c-row__col--1-3">
+                <div class="p-show-grid__item">1/3</div>
+              </div>
+              <div class="_c-row__col _c-row__col--1-3">
+                <div class="p-show-grid__item">1/3<br />1/3</br />1/3</div>
+              </div>
+              <div class="_c-row__col _c-row__col--1-3">
+                <div class="p-show-grid__item">1/3<br />1/3</div>
+              </div>
+            </div>
+
+            <h3 class="c-section__h3">Middle</h3>
+            <pre><code>&lt;div class=&quot;_c-row _c-row--middle&quot;&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;br /&gt;1/3&lt;/br /&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;br /&gt;1/3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <div class="_c-row _c-row--middle p-show-grid">
+              <div class="_c-row__col _c-row__col--1-3">
+                <div class="p-show-grid__item">1/3</div>
+              </div>
+              <div class="_c-row__col _c-row__col--1-3">
+                <div class="p-show-grid__item">1/3<br />1/3</br />1/3</div>
+              </div>
+              <div class="_c-row__col _c-row__col--1-3">
+                <div class="p-show-grid__item">1/3<br />1/3</div>
+              </div>
+            </div>
+
+            <h3 class="c-section__h3">Baseline</h3>
+            <pre><code>&lt;div class=&quot;_c-row _c-row--baseline&quot;&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;br /&gt;1/3&lt;/br /&gt;1/3&lt;/div&gt;
+&lt;div class=&quot;_c-row__col _c-row__col--1-3&quot;&gt;1/3&lt;br /&gt;1/3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <div class="_c-row _c-row--baseline p-show-grid">
+              <div class="_c-row__col _c-row__col--1-3">
+                <div class="p-show-grid__item">1/3</div>
+              </div>
+              <div class="_c-row__col _c-row__col--1-3">
+                <div class="p-show-grid__item">1/3<br />1/3</br />1/3</div>
+              </div>
+              <div class="_c-row__col _c-row__col--1-3">
+                <div class="p-show-grid__item">1/3<br />1/3</div>
+              </div>
+            </div>
+          </section>
+
+          <section class="c-section c-section--border" id="buttons">
+            <h1 class="c-section__h1">Buttons</h1>
+
+            <pre><code>&lt;a class=&quot;_c-btn&quot;&gt;default&lt;/a&gt;
+&lt;input type=&quot;submit&quot; class=&quot;_c-btn&quot; value=&quot;default&quot; /&gt;
+&lt;button class=&quot;_c-btn&quot;&gt;default&lt;/button&gt;</code></pre>
+
+            <div class="section">
+              <a class="_c-btn">default</a>
+              <input type="submit" class="_c-btn" value="default" />
+              <button class="_c-btn">default</button>
+            </div>
+
+            <h2 class="c-section__h2">Ghost Button</h2>
+
+            <pre><code>&lt;a class=&quot;_c-btn _c-btn--ghost&quot;&gt;ghost&lt;/a&gt;</code></pre>
+
+            <div class="section" style="text-align: center">
+              <div style="padding: 100px; background-color: #202020">
+                <a class="_c-btn _c-btn--ghost">ghost</a>
+              </div>
+            </div>
+
+            <h2 class="c-section__h2">Block buttons</h2>
+
+            <pre><code>&lt;a class=&quot;_c-btn _c-btn--block&quot;&gt;block&lt;/a&gt;</code></pre>
+
+            <div class="section">
+              <a class="_c-btn _c-btn--block">block</a>
+            </div>
+          </section>
+
+          <section class="c-section c-section--border" id="alerts">
+            <h1 class="c-section__h1">Alerts</h1>
+
+            <pre><code>&lt;div class=&quot;_c-alert&quot;&gt;This is alert !&lt;/div&gt;</code></pre>
+
+            <div class="section">
+              <div class="_c-alert">This is alert !</div>
+            </div>
+          </section>
+
+          <section class="c-section c-section--border" id="hero">
+            <h1 class="c-section__h1">Hero</h1>
+
+            <h2 class="c-section__h2">Using header and footer</h2>
+
+            <pre><code>&lt;div class=&quot;_c-hero&quot; style=&quot;background-color: #00DAE6; color: #fff;&quot;&gt;
+&lt;div class=&quot;_c-hero__header&quot;&gt;header&lt;/div&gt;
+&lt;div class=&quot;_c-hero__content _u-text-center&quot;&gt;
+Lorem ipsum dolor sit amet
+&lt;/div&gt;
+&lt;div class=&quot;_c-hero__footer&quot;&gt;footer&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <div class="section">
+              <div class="_c-hero" style="background-color: #00DAE6; color: #fff;">
+                <div class="_c-hero__header">header</div>
+                <div class="_c-hero__content _u-text-center" style="padding: 5rem;">
+                  Lorem ipsum dolor sit amet
+                </div>
+                <div class="_c-hero__footer">footer</div>
+              </div>
+            </div>
+
+            <h2 class="c-section__h2">Using background image</h2>
+
+            <pre><code>&lt;div class=&quot;_c-hero _c-hero--cover&quot; style=&quot;background-image: url( /path/to/image ); color: #fff;&quot;&gt;
+&lt;div class=&quot;_c-hero__content _u-text-center&quot; style=&quot;padding: 5rem;&quot;&gt;
+Lorem ipsum dolor sit amet
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <div class="section">
+              <div class="_c-hero _c-hero--cover" style="background-image: url( http://2inc.org/wp-content/themes/inc20/images/sample/SDIM4376_2.jpg ); color: #fff;">
+                <div class="_c-hero__content _u-text-center" style="padding: 5rem;">
+                  Lorem ipsum dolor sit amet
+                </div>
+              </div>
+            </div>
+
+            <h2 class="c-section__h2">Using overlay</h2>
+
+            <pre><code>&lt;div class=&quot;_c-hero _c-hero--cover _c-hero--overlay&quot; style=&quot;background-image: url( /path/to/image ); color: #fff;&quot;&gt;
+&lt;div class=&quot;_c-hero__content _u-text-center&quot; style=&quot;padding: 5rem;&quot;&gt;
+Lorem ipsum dolor sit amet
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <div class="section">
+              <div class="_c-hero _c-hero--cover _c-hero--overlay" style="background-image: url( http://2inc.org/wp-content/themes/inc20/images/sample/SDIM4376_2.jpg ); color: #fff;">
+                <div class="_c-hero__content _u-text-center" style="padding: 5rem;">
+                  Lorem ipsum dolor sit amet
+                </div>
+              </div>
+            </div>
+
+            <h2 class="c-section__h2">Using fixed background image ( PC size only )</h2>
+
+            <pre><code>&lt;div class=&quot;_c-hero _c-hero--cover _c-hero--fixed&quot; style=&quot;background-image: url( /path/to/image ); color: #fff;&quot;&gt;
+&lt;div class=&quot;_c-hero__content _u-text-center&quot; style=&quot;padding: 5rem;&quot;&gt;
+Lorem ipsum dolor sit amet
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <div class="section">
+              <div class="_c-hero _c-hero--cover _c-hero--fixed" style="background-image: url( http://2inc.org/wp-content/themes/inc20/images/sample/SDIM4376_2.jpg ); color: #fff;">
+                <div class="_c-hero__content _u-text-center" style="padding: 5rem;">
+                  Lorem ipsum dolor sit amet
+                </div>
+              </div>
+            </div>
+
+            <h2 class="c-section__h2">Full size</h2>
+
+            <pre><code>&lt;div class=&quot;_c-hero _c-hero--full&quot; style=&quot;background-color: #00DAE6; color: #fff;&quot;&gt;
+&lt;div class=&quot;_c-hero__content _u-text-center&quot; style=&quot;padding: 5rem;&quot;&gt;
+Lorem ipsum dolor sit amet
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <div class="section">
+              <div class="_c-hero _c-hero--full" style="background-color: #00DAE6; color: #fff;">
+                <div class="_c-hero__content _u-text-center" style="padding: 5rem;">
+                  Lorem ipsum dolor sit amet
+                </div>
+              </div>
+            </div>
+          </section>
+
+          </main>
+        </div>
+        <div class="_c-row__col _c-row__col--1-1 _c-row__col--lg-1-4">
+          <aside id="sub" class="_l-sub" role="complementary">
+
+            <section class="p-local-nav">
+              <h1 class="p-local-nav__title">Foundation</h1>
+              <ul class="p-local-nav__menu">
+                <li class="p-local-nav__item"><a href="#wrappers">Wrappers</a></li></li>
+                <li class="p-local-nav__item"><a href="#forms">Forms</a></li></li>
+                <li class="p-local-nav__item"><a href="#media">Media</a></li></li>
+                <li class="p-local-nav__item"><a href="#grid-system">Grid System</a></li></li>
+                <li class="p-local-nav__item"><a href="#buttons">Buttons</a></li></li>
+                <li class="p-local-nav__item"><a href="#alerts">Alerts</a></li></li>
+                <li class="p-local-nav__item"><a href="#hero">Hero</a></li></li>
+              </ul>
+            </section>
+
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <% include _layout/_footer %>
+</div>
+<script src="/assets/js/app.js"></script>
+</body>
+</html>

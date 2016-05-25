@@ -1,0 +1,11 @@
+@import '../../../node_modules/sass-basis-layout/src/scss/layout/container';
+@import 'header';
+@import 'footer';
+
+.#{$bs-prefix}l-contents {
+  margin-top: 65px; // header height
+}
+
+.#{$bs-prefix}l-sub {
+  @include bs-padding-top(2);
+}

@@ -20,19 +20,19 @@ var path = {
   src: {
     scss   : 'src/scss/**/*.scss',
     js     : 'src/js/**.js',
-  	images : 'src/images/**/*.+(jpg|jpeg|png|gif|svg)',
+    images : 'src/images/**/*.+(jpg|jpeg|png|gif|svg)',
     favicon: 'src/favicon.ico',
-  	ejs : [
-  		'src/ejs/**/*.ejs',
-  		'!src/ejs/**/_*.ejs'
-  	]
+    ejs : [
+      'src/ejs/**/*.ejs',
+      '!src/ejs/**/_*.ejs'
+    ]
   },
   dist: {
     css    : 'public/assets/css',
     js     : 'public/assets/js',
-  	images : 'public/assets/images',
+    images : 'public/assets/images',
     favicon: 'public',
-  	ejs    : 'public',
+    ejs    : 'public',
   }
 };
 
@@ -75,24 +75,25 @@ gulp.task('sass', function() {
  * EJS to HTML
  */
 gulp.task( 'ejs', function() {
-	gulp.src( path.src.ejs )
-	.pipe( ejs(
-		{
-			css   : '/assets/css',
-			js    : '/assets/js',
-			images: '/assets/images'
-		},
-		{ ext: '.html' } )
-	)
-	.pipe( gulp.dest( path.dist.ejs ) );
+  gulp.src( path.src.ejs )
+  .pipe( ejs(
+    {
+      version: '5.0.0',
+      css    : '/assets/css',
+      js     : '/assets/js',
+      images : '/assets/images'
+    },
+    { ext: '.html' } )
+  )
+  .pipe( gulp.dest( path.dist.ejs ) );
 } );
 
 /**
  * images
  */
 gulp.task( 'imagecopy', function(){
-	gulp.src( path.src.images )
-		.pipe( gulp.dest( path.dist.images ) );
+  gulp.src( path.src.images )
+    .pipe( gulp.dest( path.dist.images ) );
 } );
 gulp.task( 'favicon', function(){
   gulp.src( path.src.favicon )
@@ -107,6 +108,7 @@ gulp.task('watch', function() {
   gulp.watch([path.src.js], ['js']);
   gulp.watch([path.src.images], ['imagecopy']);
   gulp.watch([path.src.favicon], ['favicon']);
+  gulp.watch(['src/ejs/**/*.ejs'], ['ejs']);
 });
 
 
@@ -116,7 +118,7 @@ gulp.task('watch', function() {
 gulp.task('browsersync', function() {
   browser_sync.init( {
     server: {
-			baseDir: "public/"
+      baseDir: "public/"
     },
     files: [
       'public/**'

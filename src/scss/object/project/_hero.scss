@@ -1,0 +1,27 @@
+.p-hero {
+  background-color: $color-primary;
+  min-height: 50vh;
+
+  &, a {
+    color: #fff;
+  }
+
+  .#{$bs-prefix}c-hero__header {
+    padding: ($bs-base-line-height / 2) 0;
+  }
+
+  .#{$bs-prefix}c-hero__content {
+    text-align: center;
+  }
+
+  &__title {
+    display: inline-block;
+    margin: 0 0 $bs-base-font-size;
+    padding: 0 0 $bs-base-font-size;
+    border-bottom: 1px solid #fff;
+  }
+
+  &__description {
+    margin: 0 0 $bs-base-line-height;
+  }
+}
