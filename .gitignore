@@ -1,6 +1,4 @@
 node_modules/
 .DS_Store
-assets/css
-assets/js
-gh-pages/
+public/
 *.log
