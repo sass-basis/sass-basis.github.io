@@ -1,5 +1,6 @@
 .p-hero {
   background-color: $color-primary;
+  background: linear-gradient(135deg, $color-primary 40%, darken($color-primary, 10) 100%);
   min-height: 50vh;
 
   &, a {
