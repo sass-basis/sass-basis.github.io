@@ -15,13 +15,23 @@
   }
 
   &__title {
-    display: inline-block;
     margin: 0 0 $bs-base-font-size;
-    padding: 0 0 $bs-base-font-size;
-    border-bottom: 1px solid #fff;
+    @include font-basis();
+
+    > img {
+      margin-right: 8px;
+      vertical-align: baseline;
+      height: 36px;
+    }
+  }
+
+  &__version {
+    @include bs-margin-bottom(1);
+    @include bs-font-size-line-height(14px);
+    opacity: .8;
   }
 
   &__description {
-    margin: 0 0 $bs-base-line-height;
+    @include bs-margin-bottom(1);
   }
 }

@@ -1,5 +1,6 @@
 .p-site-branding {
   &__title {
+    @include font-basis();
     @include bs-font-size-line-height($bs-base-font-size * 2);
     margin: 0;
   }
