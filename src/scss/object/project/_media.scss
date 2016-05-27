@@ -44,9 +44,10 @@
   }
 
   &__title {
-    @include bs-font-size-line-height($bs-base-font-size);
-    font-weight: bold;
     margin: 0;
+    color: #777;
+    @include bs-font-size-line-height($bs-base-font-size);
+    font-weight: normal;
     padding: 0;
   }
 
