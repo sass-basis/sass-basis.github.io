@@ -3,5 +3,11 @@
     @include font-basis();
     @include bs-font-size-line-height($bs-base-font-size * 2);
     margin: 0;
+
+    img {
+      margin-right: 8px;
+      vertical-align: baseline;
+      height: 24px;
+    }
   }
 }
