@@ -2,8 +2,12 @@
 @import 'header';
 @import 'footer';
 
+.#{$bs-prefix}l_container {
+  overflow: hidden;
+}
+
 .#{$bs-prefix}l-contents {
-  margin-top: 65px; // header height
+  margin-top: 62px; // header height
 }
 
 .#{$bs-prefix}l-sub {
