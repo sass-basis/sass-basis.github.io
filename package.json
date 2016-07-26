@@ -26,7 +26,7 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
-    "sass-basis": "^5.2.1",
+    "sass-basis": "^5.3.0",
     "sass-basis-card": "^0.1.2",
     "sass-basis-drawer": "^2.0.0",
     "sass-basis-hamburger-btn": "^0.1.2",
