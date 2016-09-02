@@ -35,4 +35,18 @@
   &__description {
     @include bs-margin-bottom(1);
   }
+
+  .#{$bs-prefix}c-alert {
+    background-color: #444;
+    border: none;
+
+    a {
+      color: $color-primary;
+      text-decoration: none;
+
+      @include bs-hover() {
+        text-decoration: underline;
+      }
+    }
+  }
 }
