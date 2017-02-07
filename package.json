@@ -1,53 +1,39 @@
 {
   "name": "sass-basis.github.io",
-  "version": "1.0.0",
+  "version": "6.0.0",
   "main": "index.html",
   "author": "inc2734",
   "license": "MIT",
-  "homepage": "http://sass-basis.github.io",
+  "homepage": "https://sass-basis.github.io",
   "repository": {
     "type": "git",
     "url": "https://github.com/sass-basis/sass-basis.github.io"
   },
   "devDependencies": {
-    "autoprefixer": "^6.3.7",
-    "babel-preset-es2015": "^6.9.0",
-    "babelify": "^7.3.0",
-    "browser-sync": "^2.14.0",
-    "browserify": "^13.1.0",
-    "cssnano": "^3.7.3",
+    "autoprefixer": "^6.7.2",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "browser-sync": "^2.18.7",
+    "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
     "gulp-cli": "^1.2.2",
-    "gulp-ejs": "^2.1.3",
-    "gulp-postcss": "^6.1.1",
+    "gulp-ejs": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.3.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.2",
-    "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0"
+    "gulp-rollup": "^2.11.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-glob": "^1.0.8",
+    "gulp-uglify": "^2.0.1",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^7.0.0",
+    "rollup-plugin-node-resolve": "^2.0.0"
   },
   "dependencies": {
-    "sass-basis": "^5.4.1",
-    "sass-basis-card": "^0.1.2",
-    "sass-basis-drawer": "^2.0.0",
-    "sass-basis-hamburger-btn": "^0.1.2",
-    "sass-basis-layout": "^1.1.2",
-    "sass-basis-menu": "^0.2.2"
-  },
-  "browserify": {
-    "transform": [
-      [
-        "babelify",
-        {
-          "presets": [
-            "es2015"
-          ]
-        }
-      ]
-    ]
+    "jquery": "^3.1.1",
+    "sass-basis": "git://github.com/sass-basis/basis.git#v6",
+    "sass-basis-layout": "^7.0.0"
   },
   "scripts": {
-    "gulp": "gulp",
-    "build": "gulp build",
-    "deploy": "gulp deploy"
+    "gulp": "gulp"
   }
 }

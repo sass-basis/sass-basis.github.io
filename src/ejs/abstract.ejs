@@ -1,0 +1,638 @@
+<% var title = 'Abstract' %>
+<% is_front_page = false %>
+<% include _layout/_head %>
+<body class="_l-body" data-sticky-footer="true">
+<% include _object/_component/_page-effect %>
+<div class="_c-drawer" data-c="drawer">
+
+  <% include _object/_project/_drawer %>
+
+  <div id="container" class="_l-container" data-l="container">
+    <% include _layout/_header %>
+
+    <div id="contents" class="_l-contents" data-l="contents">
+      <% include _object/_project/_hero %>
+
+      <div class="_c-container">
+        <div class="_c-row _c-row--margin-l">
+          <div class="_c-row__col _c-row__col--1-1 _c-row__col--lg-3-4">
+            <main id="main" class="_l-main" role="main">
+
+              <section class="c-section c-section--border" id="_alert">
+                <h1 class="c-section__h1">_alert</h1>
+
+                <pre><code>//
+// The alert component
+//
+// @param  hash  properties for decoration
+//
+.c-alert {
+  @include _alert((
+    'background-color': null,
+    'border-color'    : null,
+    'border-size'     : null,
+  ));
+}
+
+&lt;div class="c-alert" role="alert"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+              </section>
+
+              <section class="c-section c-section--border" id="_balloon-top">
+                <h1 class="c-section__h1">_balloon-top</h1>
+
+                <pre><code>//
+// The top balloon component
+//
+// @param  hash  properties for decoration
+//
+.c-balloon-top {
+  @include _balloon-top((
+    'background-color': #fff,
+    'border-color'    : #ccc,
+    'border-size'     : 1px,
+    'triangle-size'   : 10px,
+  ));
+}
+
+&lt;div class="c-balloon-top"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+              </section>
+
+              <section class="c-section c-section--border" id="_balloon-right">
+                <h1 class="c-section__h1">_balloon-right</h1>
+
+                <pre><code>//
+// The right balloon component
+//
+// @param  hash  properties for decoration
+//
+.c-balloon-right {
+  @include _balloon-right((
+    'background-color': #fff,
+    'border-color'    : #ccc,
+    'border-size'     : 1px,
+    'triangle-size'   : 10px,
+  ));
+}
+
+&lt;div class="c-balloon-right"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+              </section>
+
+              <section class="c-section c-section--border" id="_balloon-bottom">
+                <h1 class="c-section__h1">_balloon-bottom</h1>
+
+                <pre><code>//
+// The bottom balloon component
+//
+// @param  hash  properties for decoration
+//
+.c-balloon-bottom {
+  @include _balloon-bottom((
+    'background-color': #fff,
+    'border-color'    : #ccc,
+    'border-size'     : 1px,
+    'triangle-size'   : 10px,
+  ));
+}
+
+&lt;div class="c-balloon-bottom"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+              </section>
+
+              <section class="c-section c-section--border" id="_balloon-left">
+                <h1 class="c-section__h1">_balloon-left</h1>
+
+                <pre><code>//
+// The left balloon component
+//
+// @param  hash  properties for decoration
+//
+.c-balloon-left {
+  @include _balloon-left((
+    'background-color': #fff,
+    'border-color'    : #ccc,
+    'border-size'     : 1px,
+    'triangle-size'   : 10px,
+  ));
+}
+
+&lt;div class="c-balloon-left"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+              </section>
+
+              <section class="c-section c-section--border" id="_btn">
+                <h1 class="c-section__h1">_btn</h1>
+
+                <pre><code>//
+// The button component
+//
+// @param  hash  properties for decoration
+//
+.c-btn {
+  @include _btn({
+    'background-color': null,
+    'border-color'    : null,
+    'border-size'     : null,
+  });
+}
+
+&lt;a class="c-btn" role="button"&gt;btn&lt;/a&gt;</code></pre>
+              </section>
+
+              <section class="c-section c-section--border" id="_card">
+                <h1 class="c-section__h1">_card</h1>
+
+                <pre><code>//
+// The card componet
+//
+.c-card {
+  @include _card();
+}
+
+&lt;div class="c-card"&gt;
+ &lt;div class="c-card__figure"&gt;
+   &lt;img ...&gt;
+ &lt;/div&gt;
+ &lt;div class="c-card__body"&gt;
+   ...
+ &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </section>
+
+              <section class="c-section c-section--border" id="_checkbox">
+                <h1 class="c-section__h1">_checkbox</h1>
+
+                <pre><code>//
+// The checkbox component
+//
+.c-checkbox {
+  @include _checkbox();
+}
+
+&lt;span class="c-checkbox"&gt;
+  &lt;input type="checkbox"&gt;
+  &lt;label class="c-checkbox__label"&gt;Label&lt;/label&gt;
+&lt;/span&gt;</code></pre>
+              </section>
+
+              <section class="c-section c-section--border" id="_container">
+                <h1 class="c-section__h1">_container</h1>
+
+                <pre><code>//
+// The container component
+//
+// _container-max-width: 1200px !default;
+//
+.c-container {
+  @include _container();
+}
+
+&lt;div class="c-container"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+              </section>
+
+              <section class="c-section c-section--border" id="_drawer">
+                <h1 class="c-section__h1">_drawer <span class="c-label">JS</span></h1>
+
+                <pre><code>//
+// The drawer component
+//
+// @param  hash  properties for decoration
+//
+.c-drawer {
+  @include _drawer((
+    'background-color': _light($_color-black),
+    'width'           : ($_base-line-height * 10),
+    'max-width'       : 80%,
+  ));
+}
+
+import BasisDrawer from 'node_modules/sass-basis/src/js/drawer.js';
+new BasisDrawer();
+
+&lt;div class=&quot;c-drawer&quot; data-c=&quot;drawer&quot;&gt;
+  &lt;nav id=&quot;drawer&quot; class=&quot;c-drawer__body&quot; data-c=&quot;drawer__body&quot; role=&quot;navigation&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;ul class=&quot;c-drawer__menu&quot;&gt;
+      &lt;li class=&quot;c-drawer__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;menu&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;c-drawer__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;menu&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&quot;c-drawer__item&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;menu&lt;/a&gt;
+        &lt;div class=&quot;c-drawer__toggle&quot; data-c=&quot;drawer__toggle&quot; aria-expanded=&quot;false&quot;&gt;&gt;&lt;/div&gt;
+        &lt;ul class=&quot;c-drawer__submenu&quot; data-c=&quot;drawer__submenu&quot; aria-hidden=&quot;true&quot;&gt;
+          &lt;li class=&quot;c-drawer__subitem&quot;&gt;&lt;a href=&quot;#&quot;&gt;submenu&lt;/a&gt;&lt;/li&gt;
+          &lt;li class=&quot;c-drawer__subitem&quot;&gt;&lt;a href=&quot;#&quot;&gt;submenu&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;_c-hamburger-btn&quot; data-c=&quot;drawer-btn&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;drawer&quot;&gt;&lt;/div&gt;</code></pre>
+              </section>
+
+              <section class="c-section c-section--border" id="_flex-media">
+                <h1 class="c-section__h1">_flex-media</h1>
+
+                <pre><code>//
+// The media component. When smartphone size, vertically aligned.
+//
+.c-flex-media {
+  @include _flex-media();
+}
+
+&lt;div class="c-flex-media"&gt;
+ &lt;div class="c-flex-media__figure"&gt;
+   &lt;img ...&gt;
+ &lt;/div&gt;
+ &lt;div class="c-flex-media__body"&gt;
+   ...
+ &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </section>
+
+              <section class="c-section c-section--border" id="_form-control">
+                <h1 class="c-section__h1">_form-control</h1>
+
+                <pre><code>//
+// The form control component
+//
+// @param  hash  properties for decoration
+//
+.c-form-control {
+  @include _form-control((
+    'background-color'         : #fff,
+    'border-size'              : 1px,
+    'border-color'             : #ccc,
+    'disabled-background-color': #eee,
+    'readonly-background-color': #eee,
+  ));
+}
+
+&lt;input type="text" class="c-form-control"&gt;</code></pre>
+              </section>
+
+              <section class="c-section c-section--border" id="_hamburger-btn">
+                <h1 class="c-section__h1">_hamburger-btn</h1>
+
+                <pre><code>//
+// The hamberger button component
+//
+// @param  hash  properties for decoration
+//
+.c-hamburger-btn {
+  @include _hamburger-btn((
+    'height'    : 16px,
+    'width'     : 22px,
+    'bar-height': 2px,
+    'color'     : $_color-text,
+  ));
+}
+
+&lt;div class="c-hamburger-btn" role="button" aria-expanded="false"&gt;
+  &lt;div class="c-hamburger-btn__bar"&gt;&lt;/div&gt;
+  &lt;div class="c-hamburger-btn__bar"&gt;&lt;/div&gt;
+  &lt;div class="c-hamburger-btn__bar"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </section>
+
+              <section class="c-section c-section--border" id="_hero">
+                <h1 class="c-section__h1">_hero</h1>
+
+                <pre><code>//
+// The hero component
+//
+.c-hero {
+  @include _hero();
+}
+
+&lt;div class="c-hero"&gt;
+  &lt;div class="c-hero__header"&gt;&lt;/div&gt;
+  &lt;div class="c-hero__content"&gt;&lt;/div&gt;
+  &lt;div class="c-hero__footer"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </section>
+
+              <section class="c-section c-section--border" id="_input-group">
+                <h1 class="c-section__h1">_input-group</h1>
+
+                <pre><code>//
+// The input group component
+//
+// @param  hash  properties for decoration
+//
+.c-input-group {
+  @include _input-group((
+    border-size : 1px,
+    border-color: _light($_color-gray),
+  ));
+}
+
+&lt;div class="c-input-group"&gt;
+  &lt;div class="c-input-group__addon"&gt;@&lt;/div&gt;
+  &lt;div class="c-input-group__field"&gt;
+    &lt;input type="text"&gt;
+  &lt;/div&gt;
+  &lt;button class="c-input-group__btn"&gt;Go&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+              </section>
+
+              <section class="c-section c-section--border" id="_media">
+                <h1 class="c-section__h1">_media</h1>
+
+                <pre><code>//
+// The media component
+//
+.c-media {
+  @include _media();
+}
+
+&lt;div class="c-media"&gt;
+  &lt;div class="c-media__figure"&gt;
+    &lt;img ...&gt;
+  &lt;/div&gt;
+  &lt;div class="c-media__body"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </section>
+
+              <section class="c-section c-section--border" id="_navbar">
+                <h1 class="c-section__h1">_navbar</h1>
+
+                <pre><code>//
+// The navbar component
+//
+.c-navbar {
+  @include _navbar();
+}
+
+import BasisNavbar from 'node_modules/sass-basis/src/js/navbar.js';
+new BasisNavbar();
+
+&lt;ul class=&quot;_c-navbar&quot;&gt;
+  &lt;li class=&quot;_c-navbar__item&quot; data-c=&quot;navbar__item&quot; aria-haspopup=&quot;true&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;menu&lt;/a&gt;
+    &lt;ul class=&quot;_c-navbar__submenu&quot; data-c=&quot;navbar__submenu&quot; aria-hidden=&quot;true&quot;&gt;
+      &lt;li class=&quot;_c-navbar__subitem&quot; data-c=&quot;navbar__subitem&quot; aria-haspopup=&quot;true&quot;&gt;
+        &lt;a href=&quot;#&quot;&gt;submenu&lt;/a&gt;
+        &lt;ul class=&quot;_c-navbar__submenu&quot; data-c=&quot;navbar__submenu&quot; aria-hidden=&quot;true&quot;&gt;
+          &lt;li class=&quot;_c-navbar__subitem&quot; data-c=&quot;navbar__subitem&quot;&gt;&lt;a href=&quot;#&quot;&gt;submenu&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+              </section>
+
+              <section class="c-section c-section--border" id="_radio">
+                <h1 class="c-section__h1">_radio</h1>
+
+                <pre><code>//
+// The radio component
+//
+// @param  hash  properties for decoration
+//
+.c-radio {
+  @include _radio();
+}
+
+&lt;span class="c-radio"&gt;
+  &lt;input type="radio"&gt;
+  &lt;label class="c-radio__label"&gt;Label&lt;/label&gt;
+&lt;/span&gt;</code></pre>
+              </section>
+
+              <section class="c-section c-section--border" id="_page-effect">
+                <h1 class="c-section__h1">_page-effect <span class="c-label">JS</span></h1>
+
+                <pre><code>//
+// The page effect component
+//
+// @param  hash  properties for decoration
+//
+.c-page-effect {
+  @include _page-effect((
+    'duration': .2s,
+    'color'   : #fff,
+  ));
+}
+
+import BasisPageEffect from 'node_modules/sass-basis/src/js/page-effect.js';
+new BasisPageEffect();
+
+&lt;div class=&quot;c-page-effect&quot; data-c=&quot;page-effect&quot; data-page-effect=&quot;fadein&quot; aria-hidden=&quot;false&quot;&gt;
+  &lt;div class=&quot;c-page-effect__item&quot;&gt;
+    Loading...
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </section>
+
+              <section class="c-section c-section--border" id="_row">
+                <h1 class="c-section__h1">_row</h1>
+
+                <pre><code>//
+// The grid component
+//
+// Grid wrapper
+//
+@include _row();
+
+//
+// Setting column width
+//
+// @param  int  $columns  molecule column size
+// @param  int  $max-columns  denominator column size
+//
+@include _row__col($columns: null, $max-columns: null)
+
+//
+// Setting column width
+//
+// @param  length  $width
+//
+@include _row__col--width($width)
+
+//
+// Setting column offset
+//
+// @param  int  $columns  molecule offset size
+// @param  int  $max-columns  denominator offset size
+//
+@include _row__col--offset($columns: null, $max-columns: null)
+
+//
+// Adding margin for the column
+//
+// @param  int  coefficient
+//
+@include _row__col--margin($coefficient)
+
+//
+// Adding margin for the row
+//
+// @param  int  $coefficient
+//
+@include _row--margin($coefficient)
+
+.c-row {
+  @include _row();
+  &__col {
+    @include _row__col();
+    &--1-3 {
+      @include _row__col(1, 3);
+    }
+    &--offset-1-3 {
+      @include _row__col--offset(1, 3);
+    }
+  }
+}</code></pre>
+              </section>
+
+              <section class="c-section c-section--border" id="_select">
+                <h1 class="c-section__h1">_select</h1>
+
+                <pre><code>//
+// The select component
+//
+// @param  hash  properties for decoration
+//
+.c-select {
+  @include _select((
+    'background-color': null,
+    'border-color'    : null,
+    'border-size'     : null,
+  ));
+}
+
+&lt;span class="c-select"&gt;
+  &lt;select&gt;&lt;/select&gt;
+&lt;/span&gt;</code></pre>
+              </section>
+
+              <section class="c-section c-section--border" id="_spinner-dots">
+                <h1 class="c-section__h1">_spinner-dots</h1>
+
+                <pre><code>//
+// The dots spinner component
+//
+// @param  hash  properties for decoration
+//
+.c-spinner-dots {
+  @include _spinner-dots((
+    'size'    : 10px,
+    'color'   : $_color-gray,
+    'delay'   : 0s,
+    'duration': 2s,
+    'scale'   : 1.3,
+  ));
+}
+
+&lt;div class="c-spinner-dots"&gt;
+  &lt;div class="c-spinner-dots__dot"&gt;&lt;/div&gt;
+  &lt;div class="c-spinner-dots__dot"&gt;&lt;/div&gt;
+  &lt;div class="c-spinner-dots__dot"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </section>
+
+              <section class="c-section c-section--border" id="_spinner-pulse">
+                <h1 class="c-section__h1">_spinner-pulse</h1>
+
+                <pre><code>//
+// The pulse spinner component
+//
+// @param  hash  properties for decoration
+//
+.c-spinner-pulse {
+  @include _spinner-pulse((
+    'height'  : 16px,
+    'width'   : 5px,
+    'color'   : $_color-gray,
+    'delay'   : 0s,
+    'duration': 2s,
+    'scale'   : 1.3,
+  ));
+}
+
+&lt;div class="c-spinner-pulse"&gt;
+  &lt;div class="c-spinner-pulse__bar"&gt;&lt;/div&gt;
+  &lt;div class="c-spinner-pulse__bar"&gt;&lt;/div&gt;
+  &lt;div class="c-spinner-pulse__bar"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </section>
+
+              <section class="c-section c-section--border" id="_spinner-circle">
+                <h1 class="c-section__h1">_spinner-circle</h1>
+
+                <pre><code>//
+// The circle spinner component
+//
+// @param  hash  properties for decoration
+//
+.c-spinner-circle {
+  @include _spinner-circle((
+    'size'       : 20px,
+    'color'      : _light($_color-gray),
+    'border-size': 3px,
+    'delay'      : 0s,
+    'duration'   : 2s,
+  ));
+}
+
+&lt;div class="c-spinner-circle"&gt;&lt;/div&gt;</code></pre>
+              </section>
+
+            </main>
+          </div>
+          <div class="_c-row__col _c-row__col--1-1 _c-row__col--lg-1-4">
+            <aside id="sub" class="_l-sub" role="complementary">
+
+              <section class="p-local-nav">
+                <h1 class="p-local-nav__title">Abstract</h1>
+                <ul class="p-local-nav__menu">
+                  <li class="p-local-nav__item"><a href="#_alert">_alert</a></li>
+                  <li class="p-local-nav__item"><a href="#_balloon-top">_balloon-top</a></li>
+                  <li class="p-local-nav__item"><a href="#_balloon-right">_balloon-right</a></li>
+                  <li class="p-local-nav__item"><a href="#_balloon-bottom">_balloon-bottom</a></li>
+                  <li class="p-local-nav__item"><a href="#_balloon-left">_balloon-left</a></li>
+                  <li class="p-local-nav__item"><a href="#_btn">_btn</a></li>
+                  <li class="p-local-nav__item"><a href="#_card">_card</a></li>
+                  <li class="p-local-nav__item"><a href="#_checkbox">_checkbox</a></li>
+                  <li class="p-local-nav__item"><a href="#_container">_container</a></li>
+                  <li class="p-local-nav__item"><a href="#_drawer">_drawer</a></li>
+                  <li class="p-local-nav__item"><a href="#_flex-media">_flex-media</a></li>
+                  <li class="p-local-nav__item"><a href="#_form-control">_form-control</a></li>
+                  <li class="p-local-nav__item"><a href="#_hamburger-btn">_hamburger-btn</a></li>
+                  <li class="p-local-nav__item"><a href="#_hero">_hero</a></li>
+                  <li class="p-local-nav__item"><a href="#_input-group">_input-group</a></li>
+                  <li class="p-local-nav__item"><a href="#_media">_media</a></li>
+                  <li class="p-local-nav__item"><a href="#_navbar">_navbar</a></li>
+                  <li class="p-local-nav__item"><a href="#_page-effect">_page-effect</a></li>
+                  <li class="p-local-nav__item"><a href="#_radio">_radio</a></li>
+                  <li class="p-local-nav__item"><a href="#_row">_row</a></li>
+                  <li class="p-local-nav__item"><a href="#_select">_select</a></li>
+                  <li class="p-local-nav__item"><a href="#_spinner-dots">_spinner-dots</a></li>
+                  <li class="p-local-nav__item"><a href="#_spinner-pulse">_spinner-pulse</a></li>
+                  <li class="p-local-nav__item"><a href="#_spinner-circle">_spinner-circle</a></li>
+                </ul>
+              </section>
+
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <% include _layout/_footer %>
+  </div>
+</div>
+<script src="/assets/js/app.min.js"></script>
+</body>
+</html>

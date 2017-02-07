@@ -1,0 +1,10 @@
+$color-primary: #00DAE6;
+$_font-family : Helvetica, Arial, sans-serif;
+$_color-text  : #444;
+
+@import '../../node_modules/sass-basis/src/css/basis';
+@import 'core/mixin/*';
+@import 'foundation/*';
+@import 'layout/*';
+@import 'object/component/*';
+@import 'object/project/*';

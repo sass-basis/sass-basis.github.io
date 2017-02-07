@@ -1,7 +1,7 @@
 language: node_js
 sudo: false
 node_js:
-  - '4.2'
+  - '6'
 branches:
   only:
     - develop
@@ -17,7 +17,12 @@ before_script:
 script:
   - cd gh-pages
   - ls | xargs rm -rf
+  - rm -rf .gitignore .travis.yml
   - cd ../
-  - npm run deploy
+  - npm run gulp build
+  - ls -la
+  - ls -la public/
+  - cp -R public/* gh-pages/
+  - ls -la gh-pages/
 after_success:
   - bash ./bin/deploy.sh

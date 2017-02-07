@@ -1,229 +1,227 @@
 <% var title = 'Foundation' %>
+<% is_front_page = false %>
 <% include _layout/_head %>
-<body class="_l-body _c-drawer">
+<body class="_l-body" data-sticky-footer="true">
+<% include _object/_component/_page-effect %>
+<div class="_c-drawer" data-c="drawer">
 
-<% include _object/_project/_drawer %>
+  <% include _object/_project/_drawer %>
 
-<div id="container" class="_l-container _l-container--sticky-footer">
-  <% include _layout/_header %>
+  <div id="container" class="_l-container" data-l="container">
+    <% include _layout/_header %>
 
-  <div id="contents" class="_l-contents">
-    <% include _object/_project/_hero %>
+    <div id="contents" class="_l-contents" data-l="contents">
+      <% include _object/_project/_hero %>
 
-    <div class="_c-container">
-      <div class="_c-row _c-row--margin-l">
-        <div class="_c-row__col _c-row__col--1-1 _c-row__col--lg-3-4">
-          <main id="main" class="_l-main" role="main">
+      <div class="_c-container">
+        <div class="_c-row _c-row--margin-l">
+          <div class="_c-row__col _c-row__col--1-1 _c-row__col--lg-3-4">
+            <main id="main" class="_l-main" role="main">
 
-            <section class="c-section c-section--border" id="typography">
-              <h1 class="c-section__h1">Typography</h1>
+              <section class="c-section c-section--border" id="typography">
+                <h1 class="c-section__h1">Typography</h1>
 
-              <p>
-                Basis offers a typography that respects the vertical rhythm. If you are Sass user, by overwriting the following variables, it is possible to customize the typography of taste without breaking the vertical rhythm.
-              </p>
+                <p>
+                  Basis offers a typography that respects the vertical rhythm. If you are Sass user, by overwriting the following variables, it is possible to customize the typography of taste without breaking the vertical rhythm.
+                </p>
 
-              <pre><code>//
+                <pre><code>//
 // Default font size
 // If html { font-size: 62.5% }, set 10px
 // @type  px
 //
-$bs-base-font-size-px: 16px;
-
-//
-// Base font size
-// @type  rem
-//
-$bs-base-font-size: 1rem;
+$_base-font-size-px: 16px;
 
 //
 // Heading element font size scale;
 // @type  int
 //
-$bs-h1-font-size-scale: 3;
-$bs-h2-font-size-scale: 2.5;
-$bs-h3-font-size-scale: 2;
-$bs-h4-font-size-scale: 1.5;
-$bs-h5-font-size-scale: 1;
-$bs-h6-font-size-scale: 1;
+$_h1-font-size-scale: 3;
+$_h2-font-size-scale: 2.5;
+$_h3-font-size-scale: 2;
+$_h4-font-size-scale: 1.5;
+$_h5-font-size-scale: 1;
+$_h6-font-size-scale: 1;
 
 //
 // Between the character and line of line-height
 // In the case of multibytes characters might be a good is about 0.375rem.
 // @type  rem
 //
-$bs-between-lines: ($bs-base-font-size / 4);
+$_between-lines: (1rem / 4);
 
 //
 // Margin coefficient
 // If you want to take the margin larger between elements than the standard, please try to 2 or more.
 // @type  int
 //
-$bs-margin-coefficient: 1;
+$_margin-coefficient: 1;
 
-@import /PATH/TO/basis/src/scss/basis;</code></pre>
+@import /PATH/TO/basis/src/css/basis;</code></pre>
 
-              <blockquote>
-                <h1>h1. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h1>
+                <blockquote>
+                  <h1>h1. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h1>
 
+                  <p>
+                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+                  </p>
+                  <p>
+                    Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
+                  </p>
+
+                  <h2>h2. Etiam rhoncus.</h2>
+
+                  <p>
+                    Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante.
+                  </p>
+                  <p>
+                    Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia.
+                  </p>
+
+                  <h2>h2. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris.</h2>
+
+                  <h3>h3. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris.</h3>
+
+                  <p>
+                    Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi.
+                  </p>
+                  <p>
+                    Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci.
+                  </p>
+
+                  <h3>h3. Phasellus consectetuer vestibulum elit.</h3>
+
+                  <p>
+                    Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis.
+                  </p>
+
+                  <h4>h4. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.</h4>
+
+                  <p>
+                    Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Nullam sagittis. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Ut varius tincidunt libero. Phasellus dolor. Maecenas vestibulum mollis diam. Pellentesque ut neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                  </p>
+
+                  <h5>h5. In dui magna, posuere eget, vestibulum et, tempor auctor, justo.</h5>
+
+                  <p>
+                    In ac felis quis tortor malesuada pretium. Pellentesque auctor neque nec urna. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Aenean viverra rhoncus pede. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut non enim eleifend felis pretium feugiat. Vivamus quis mi. Phasellus a est. Phasellus magna.
+                  </p>
+
+                  <h6>h6. In hac habitasse platea dictumst. Curabitur at lacus ac velit ornare lobortis.</h6>
+
+                  <p>
+                    Curabitur a felis in nunc fringilla tristique. Morbi mattis ullamcorper velit. Phasellus gravida semper nisi. Nullam vel sem. Pellentesque libero tortor, tincidunt et, tincidunt eget, semper nec, quam. Sed hendrerit. Morbi ac felis. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi. Nunc nulla. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Donec venenatis vulputate lorem.
+                  </p>
+                </blockquote>
+              </section>
+
+              <section class="c-section c-section--border" id="lists">
+                <h1 class="c-section__h1">Lists</h1>
+
+                <h2 class="c-section__h2">Unordered</h2>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet</li>
+                  <li>Consectetur adipiscing elit</li>
+                  <li>Integer molestie lorem at massa</li>
+                  <li>Facilisis in pretium nisl aliquet
+                    <ul>
+                      <li>Nulla volutpat aliquam velit</li>
+                      <li>Phasellus iaculis neque</li>
+                      <li>Purus sodales ultricies</li>
+                      <li>Vestibulum laoreet porttitor sem</li>
+                      <li>Ac tristique libero volutpat at</li>
+                    </ul>
+                  </li>
+                  <li>Faucibus porta lacus fringilla vel</li>
+                  <li>Aenean sit amet erat nunc</li>
+                  <li>Eget porttitor lorem</li>
+                </ul>
+
+                <h2 class="c-section__h2">Ordered</h2>
+                <ol>
+                  <li>Lorem ipsum dolor sit amet</li>
+                  <li>Consectetur adipiscing elit</li>
+                  <li>Integer molestie lorem at massa</li>
+                  <li>Facilisis in pretium nisl aliquet
+                    <ol>
+                      <li>Nulla volutpat aliquam velit</li>
+                      <li>Phasellus iaculis neque</li>
+                      <li>Purus sodales ultricies</li>
+                      <li>Vestibulum laoreet porttitor sem</li>
+                      <li>Ac tristique libero volutpat at</li>
+                    </ol>
+                  </li>
+                  <li>Faucibus porta lacus fringilla vel</li>
+                  <li>Aenean sit amet erat nunc</li>
+                  <li>Eget porttitor lorem</li>
+                </ol>
+
+                <h2 class="c-section__h2">Description</h2>
+                <dl>
+                  <dt>Euismod</dt>
+                  <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.<br />
+                    Donec id elit non mi porta gravida at eget metus.</dd>
+                  <dt>Malesuada porta</dt>
+                  <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+                </dl>
+              </section>
+
+              <section class="c-section c-section--border" id="blockquote">
+                <h1 class="c-section__h1">Blockquote</h1>
+
+                <blockquote>
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                  </p>
+                </blockquote>
+
+                <blockquote>
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                  </p>
+                  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                </blockquote>
+              </section>
+
+              <section class="c-section c-section--border" id="code">
+                <h1 class="c-section__h1">Code</h1>
+
+                <h2 class="c-section__h2">Inline</h2>
+                <pre><code>This is a &lt;code&gt;code&lt;/code&gt; !</code></pre>
+                <div class="section">
+                  This is a <code>code</code> !
+                </div>
+
+                <h2 class="c-section__h2">Block</h2>
                 <p>
-                  Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-                </p>
-                <p>
-                  Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
-                </p>
+                  Block level code using <code>&lt;pre&gt;&lt;/pre&gt;</code> .
+                <pre><code>&lt;pre&gt;$val = '10';&lt;/pre&gt;</code></pre>
+              </section>
 
-                <h2>h2. Etiam rhoncus.</h2>
+            </main>
+          </div>
+          <div class="_c-row__col _c-row__col--1-1 _c-row__col--lg-1-4">
+            <aside id="sub" class="_l-sub" role="complementary">
 
-                <p>
-                  Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante.
-                </p>
-                <p>
-                  Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia.
-                </p>
+              <section class="p-local-nav">
+                <h1 class="p-local-nav__title">Foundation</h1>
+                <ul class="p-local-nav__menu">
+                  <li class="p-local-nav__item"><a href="#typography">Typograpy</a></li>
+                  <li class="p-local-nav__item"><a href="#lists">Lists</a></li>
+                  <li class="p-local-nav__item"><a href="#blockquote">Blockquote</a></li>
+                  <li class="p-local-nav__item"><a href="#code">Code</a></li>
+                </ul>
+              </section>
 
-                <h2>h2. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris.</h2>
-
-                <h3>h3. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris.</h3>
-
-                <p>
-                  Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi.
-                </p>
-                <p>
-                  Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci.
-                </p>
-
-                <h3>h3. Phasellus consectetuer vestibulum elit.</h3>
-
-                <p>
-                  Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis.
-                </p>
-
-                <h4>h4. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.</h4>
-
-                <p>
-                  Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Nullam sagittis. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Ut varius tincidunt libero. Phasellus dolor. Maecenas vestibulum mollis diam. Pellentesque ut neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                </p>
-
-                <h5>h5. In dui magna, posuere eget, vestibulum et, tempor auctor, justo.</h5>
-
-                <p>
-                  In ac felis quis tortor malesuada pretium. Pellentesque auctor neque nec urna. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Aenean viverra rhoncus pede. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut non enim eleifend felis pretium feugiat. Vivamus quis mi. Phasellus a est. Phasellus magna.
-                </p>
-
-                <h6>h6. In hac habitasse platea dictumst. Curabitur at lacus ac velit ornare lobortis.</h6>
-
-                <p>
-                  Curabitur a felis in nunc fringilla tristique. Morbi mattis ullamcorper velit. Phasellus gravida semper nisi. Nullam vel sem. Pellentesque libero tortor, tincidunt et, tincidunt eget, semper nec, quam. Sed hendrerit. Morbi ac felis. Nunc egestas, augue at pellentesque laoreet, felis eros vehicula leo, at malesuada velit leo quis pede. Donec interdum, metus et hendrerit aliquet, dolor diam sagittis ligula, eget egestas libero turpis vel mi. Nunc nulla. Fusce risus nisl, viverra et, tempor et, pretium in, sapien. Donec venenatis vulputate lorem.
-                </p>
-              </blockquote>
-            </section>
-
-            <section class="c-section c-section--border" id="lists">
-              <h1 class="c-section__h1">Lists</h1>
-
-              <h2 class="c-section__h2">Unordered</h2>
-              <ul>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Consectetur adipiscing elit</li>
-                <li>Integer molestie lorem at massa</li>
-                <li>Facilisis in pretium nisl aliquet
-                  <ul>
-                    <li>Nulla volutpat aliquam velit</li>
-                    <li>Phasellus iaculis neque</li>
-                    <li>Purus sodales ultricies</li>
-                    <li>Vestibulum laoreet porttitor sem</li>
-                    <li>Ac tristique libero volutpat at</li>
-                  </ul>
-                </li>
-                <li>Faucibus porta lacus fringilla vel</li>
-                <li>Aenean sit amet erat nunc</li>
-                <li>Eget porttitor lorem</li>
-              </ul>
-
-              <h2 class="c-section__h2">Ordered</h2>
-              <ol>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Consectetur adipiscing elit</li>
-                <li>Integer molestie lorem at massa</li>
-                <li>Facilisis in pretium nisl aliquet
-                  <ol>
-                    <li>Nulla volutpat aliquam velit</li>
-                    <li>Phasellus iaculis neque</li>
-                    <li>Purus sodales ultricies</li>
-                    <li>Vestibulum laoreet porttitor sem</li>
-                    <li>Ac tristique libero volutpat at</li>
-                  </ol>
-                </li>
-                <li>Faucibus porta lacus fringilla vel</li>
-                <li>Aenean sit amet erat nunc</li>
-                <li>Eget porttitor lorem</li>
-              </ol>
-
-              <h2 class="c-section__h2">Description</h2>
-              <dl>
-                <dt>Euismod</dt>
-                <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.<br />
-                  Donec id elit non mi porta gravida at eget metus.</dd>
-                <dt>Malesuada porta</dt>
-                <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
-              </dl>
-            </section>
-
-            <section class="c-section c-section--border" id="blockquote">
-              <h1 class="c-section__h1">Blockquote</h1>
-
-              <blockquote>
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-                </p>
-              </blockquote>
-
-              <blockquote>
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-                </p>
-                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-              </blockquote>
-            </section>
-
-            <section class="c-section c-section--border" id="code">
-              <h1 class="c-section__h1">Code</h1>
-
-              <h2 class="c-section__h2">Inline</h2>
-              <pre><code>This is a &lt;code&gt;code&lt;/code&gt; !</code></pre>
-              <div class="section">
-                This is a <code>code</code> !
-              </div>
-
-              <h2 class="c-section__h2">Block</h2>
-              <p>
-                Block level code using <code>&lt;pre&gt;&lt;/pre&gt;</code> .
-              <pre><code>&lt;pre&gt;$val = '10';&lt;/pre&gt;</code></pre>
-            </section>
-
-          </main>
-        </div>
-        <div class="_c-row__col _c-row__col--1-1 _c-row__col--lg-1-4">
-          <aside id="sub" class="_l-sub" role="complementary">
-
-            <section class="p-local-nav">
-              <h1 class="p-local-nav__title">Foundation</h1>
-              <ul class="p-local-nav__menu">
-                <li class="p-local-nav__item"><a href="#typography">Typograpy</a></li></li>
-                <li class="p-local-nav__item"><a href="#lists">Lists</a></li></li>
-                <li class="p-local-nav__item"><a href="#blockquote">Blockquote</a></li></li>
-                <li class="p-local-nav__item"><a href="#code">Code</a></li></li>
-              </ul>
-            </section>
-
-          </aside>
+            </aside>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <% include _layout/_footer %>
+    <% include _layout/_footer %>
+  </div>
 </div>
-<script src="/assets/js/app.js"></script>
+<script src="/assets/js/app.min.js"></script>
 </body>
 </html>
