@@ -75,10 +75,7 @@ gulp.task('css', function() {
   return gulp.src(dir.src.css + '/*.scss')
     .pipe(plumber())
     .pipe(sassGlob())
-    .pipe(sass({
-      includePaths: require('node-normalize-scss').includePaths,
-      'resolve url nocheck': true
-    }))
+    .pipe(sass())
     .pipe(gulp.dest(dir.dist.css))
     .pipe(postcss([autoprefixer({
       browsers: ['last 2 versions'],
@@ -100,7 +97,7 @@ gulp.task('ejs', function() {
     //.pipe(plumber())
     .pipe(ejs(
       {
-        version: '6.0.0',
+        version: '6.0.1',
         css    : '/assets/css',
         js     : '/assets/js',
         images : '/assets/images',
