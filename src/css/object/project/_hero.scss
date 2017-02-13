@@ -1,11 +1,13 @@
 .p-hero {
   @extend .#{$_prefix}c-hero;
   background-color: $color-primary;
-  background: linear-gradient(135deg, $color-primary 40%, _dark($color-primary) 100%);
-  height: 50vh;
+  font-family: "Open sans", sans-serif;
+  @include _padding(5, 0);
 
   &--full {
     height: 100vh;
+    @include _background-image-cover();
+    background-image: url(https://images.unsplash.com/photo-1431686969995-531930eb462f?dpr=2&auto=format&fit=crop&w=1500&h=994&q=80&cs=tinysrgb&crop=);
   }
 
   &, a {
@@ -21,29 +23,21 @@
   }
 
   &__title {
-    @include _margin(0, 0, .5);
-    @include font-basis();
-    @include _font-size-line-height(32px);
-    text-align: center;
-
-    @include _media-min('md') {
-      @include _font-size-line-height(48px);
-    }
-
-    > img {
-      margin-right: 8px;
-      vertical-align: baseline;
-      height: 36px;
-    }
+    @include _margin(.5, 0, 0);
+    @include _font-size-line-height($_base-font-size-px * 2);
+    letter-spacing: 2px;
   }
 
   &__version {
-    @include _margin(0, 0, 1);
-    @include _font-size-line-height(14px);
+    @include _margin(0, 0, 1.5);
+    @include _font-size-line-height($_base-font-size-px - 2);
     opacity: .8;
   }
 
   &__description {
-    @include _margin(0, 0, 1);
+    @include _margin(0, 0, 1.5);
+    @include _font-size-line-height($_base-font-size-px * 3);
+    font-weight: 100;
+    letter-spacing: 2px;
   }
 }

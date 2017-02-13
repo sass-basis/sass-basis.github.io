@@ -24,6 +24,7 @@ var dir = {
     css    : 'src/css',
     js     : 'src/js',
     images : 'src/images',
+    vendor : 'src/vendor',
     favicon: 'src/favicon.ico',
     ejs : [
       'src/ejs/**/*.ejs',
@@ -34,6 +35,7 @@ var dir = {
     css    : 'public/assets/css',
     js     : 'public/assets/js',
     images : 'public/assets/images',
+    vendor : 'public/assets/vendor',
     favicon: 'public',
     ejs    : 'public',
   }
@@ -122,6 +124,14 @@ gulp.task('favicon', function(){
 } );
 
 /**
+ * vendor packages
+ */
+gulp.task( 'vendorcopy', function(){
+  gulp.src(dir.src.vendor + '/**')
+    .pipe(gulp.dest(dir.dist.vendor));
+} );
+
+/**
  * Auto Compile.
  */
 gulp.task('watch', function() {
@@ -146,6 +156,6 @@ gulp.task('browsersync', function() {
   });
 });
 
-gulp.task('build', ['css', 'js', 'imagecopy', 'favicon', 'ejs']);
+gulp.task('build', ['css', 'js', 'imagecopy', 'vendorcopy', 'favicon', 'ejs']);
 
 gulp.task('default', ['build', 'browsersync', 'watch']);

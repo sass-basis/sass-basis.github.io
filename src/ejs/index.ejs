@@ -17,14 +17,13 @@
         <section class="_c-hero p-hero p-hero--full">
           <div class="_c-hero__content">
             <div class="_c-container">
-              <h1 class="p-hero__title"><img src="/assets/images/logo.svg" alt="" />Basis</h1>
               <div class="p-hero__version">
                 Currently v<%= version %>　Licence MIT License
               </div>
-              <div class="p-hero__description">
-                A lightweight responsive Sass/CSS framework based on flexible box.
-              </div>
-              <div class="_c-row _c-row--margin-s _c-row--lg-margin">
+              <h1 class="p-hero__description">
+                BUILD FASTER RESPONSIVE DESIGN
+              </h1>
+              <div class="_c-row _c-row--margin-s _c-row--lg-margin-l">
                 <div class="_c-row__col _c-row__col--1-1 _c-row__col--lg-offset-1-4 _c-row__col--lg-1-4">
                   <a href="https://github.com/sass-basis/basis" target="_blank" class="c-btn c-btn--block c-btn--ghost"><i class="fa fa-github"></i> View on GitHub</a>
                 </div>
@@ -94,12 +93,15 @@
                     <section class="p-media__body">
                       <h1 class="p-media__title">Architecture</h1>
                       <div class="p-media__content">
-                        CSS architecture of Basis is <a href="https://github.com/hiloki/flocss" target="_blank">FLOCSS</a>. So it is possible a modular approach.
+                        CSS architecture of Basis is based on <a href="https://github.com/hiloki/flocss" target="_blank">FLOCSS</a>. Also, the "core" layer has mixins and abstract of the components. So You can also use it as a mixin library without using classes.
                       </div>
                     </section>
                   </div>
                   <div class="_c-row__col _c-row__col--1-1 _c-row__col--md-2-3">
-                    <pre><code>├ core/
+                    <pre><code class="html">├ core/
+│ ├ functions/
+│ ├ mixins/
+│ └ abstracts/
 ├ foundation/
 ├ layout/
 └ object/
@@ -122,11 +124,11 @@
                     </section>
                   </div>
                   <div class="_c-row__col _c-row__col--1-1 _c-row__col--md-2-3">
-                    <pre><code>_vertical-rhythm($font-size, $coefficient: 1) {
-  $between-lines   : _strip-unit(_rem2px($_between-lines));
-  $base-line-height: _strip-unit(_rem2px($_base-line-height));
-  $base-font-size  : _strip-unit(_rem2px($_base-font-size));
-  $font-size       : _strip-unit($font-size);
+                    <pre><code class="sass">@mixin _vertical-rhythm($font-size, $coefficient: 1) {
+  $between-lines: _strip-unit(_rem2px($_between-lines));
+  $base-line-height : _strip-unit(_rem2px($_base-line-height));
+  $base-font-size: _strip-unit(_rem2px($_base-font-size));
+  $font-size: _strip-unit($font-size);
 ...</code></pre>
                   </div>
                 </div>

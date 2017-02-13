@@ -1,6 +1,8 @@
 $color-primary: #00DAE6;
-$_font-family : Helvetica, Arial, sans-serif;
+$_font-family : "Helvetica Neue", Helvetica, sans-serif;
 $_color-text  : #444;
+$_base-font-size-px: 15px;
+$_between-lines: (1rem / 3);
 
 @import '../../node_modules/sass-basis/src/css/basis';
 @import 'core/mixin/*';

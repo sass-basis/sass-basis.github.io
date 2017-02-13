@@ -1,3 +1,7 @@
+body {
+  letter-spacing: 1px;
+}
+
 a {
   transition: background-color $_transition-duration $_transition-function-timing,
               color $_transition-duration $_transition-function-timing;
