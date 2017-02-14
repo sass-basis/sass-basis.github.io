@@ -77,7 +77,9 @@ gulp.task('css', function() {
   return gulp.src(dir.src.css + '/*.scss')
     .pipe(plumber())
     .pipe(sassGlob())
-    .pipe(sass())
+    .pipe(sass({
+      includePaths: require('node-normalize-scss').includePaths
+    }))
     .pipe(gulp.dest(dir.dist.css))
     .pipe(postcss([autoprefixer({
       browsers: ['last 2 versions'],
