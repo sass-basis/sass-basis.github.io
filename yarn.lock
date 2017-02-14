@@ -3536,9 +3536,9 @@ sass-basis-layout@^7.0.1:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/sass-basis-layout/-/sass-basis-layout-7.0.1.tgz#2a5686ce217d85eab6b14eb3f39c53260d2209bf"
 
-sass-basis@^6.0.1:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/sass-basis/-/sass-basis-6.0.1.tgz#680d462fcf1ea98ac6410e76a6dcfa6c5f213560"
+sass-basis@^6.0.2:
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/sass-basis/-/sass-basis-6.0.2.tgz#b3b39ce2bb8521267d03308db07093bffe9de3e1"
   dependencies:
     node-normalize-scss "^1.4.0"
 
