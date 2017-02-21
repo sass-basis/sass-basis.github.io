@@ -22,15 +22,14 @@
                 <h1 class="c-section__h1">_alert</h1>
 
                 <pre><code class="scss">//
-// The alert component
+// Alert
 //
-// @param  hash  properties for decoration
+// @param  hash  $params  properties for decoration
 //
 .c-alert {
   @include _alert((
-    'background-color': null,
-    'border-color'    : null,
-    'border-size'     : null,
+    background-color: null,
+    border: null,
   ));
 }</code></pre>
 
@@ -43,17 +42,17 @@
                 <h1 class="c-section__h1">_balloon-top</h1>
 
                 <pre><code class="scss">//
-// The top balloon component
+// Balloon (Top)
 //
-// @param  hash  properties for decoration
+// @param  hash  $params  properties for decoration
 //
 .c-balloon-top {
-  @include _balloon-top((
-    'background-color': #fff,
-    'border-color'    : #ccc,
-    'border-size'     : 1px,
-    'triangle-size'   : 10px,
-  ));
+@include _balloon-top((
+  background-color: null,
+  border-color: null,
+  border-size: null,
+  triangle-size: 10px,
+));
 }</code></pre>
 
                 <pre><code class="html">&lt;div class="c-balloon-top"&gt;
@@ -65,16 +64,16 @@
                 <h1 class="c-section__h1">_balloon-right</h1>
 
                 <pre><code class="scss">//
-// The right balloon component
+// Balloon (Right)
 //
-// @param  hash  properties for decoration
+// @param  hash  $params  properties for decoration
 //
 .c-balloon-right {
   @include _balloon-right((
-    'background-color': #fff,
-    'border-color'    : #ccc,
-    'border-size'     : 1px,
-    'triangle-size'   : 10px,
+    background-color: null,
+    border-color: null,
+    border-size: null,
+    triangle-size: 10px,
   ));
 }</code></pre>
 
@@ -87,16 +86,16 @@
                 <h1 class="c-section__h1">_balloon-bottom</h1>
 
                 <pre><code class="scss">//
-// The bottom balloon component
+// Balloon (Bottom)
 //
-// @param  hash  properties for decoration
+// @param  hash  $params  properties for decoration
 //
 .c-balloon-bottom {
   @include _balloon-bottom((
-    'background-color': #fff,
-    'border-color'    : #ccc,
-    'border-size'     : 1px,
-    'triangle-size'   : 10px,
+    background-color: null,
+    border-color: null,
+    border-size: null,
+    triangle-size: 10px,
   ));
 }</code></pre>
 
@@ -109,16 +108,16 @@
                 <h1 class="c-section__h1">_balloon-left</h1>
 
                 <pre><code class="scss">//
-// The left balloon component
+// Balloon (Left)
 //
-// @param  hash  properties for decoration
+// @param  hash  $params  properties for decoration
 //
 .c-balloon-left {
   @include _balloon-left((
-    'background-color': #fff,
-    'border-color'    : #ccc,
-    'border-size'     : 1px,
-    'triangle-size'   : 10px,
+    background-color: null,
+    border-color: null,
+    border-size: null,
+    triangle-size: 10px,
   ));
 }</code></pre>
 
@@ -131,16 +130,15 @@
                 <h1 class="c-section__h1">_btn</h1>
 
                 <pre><code class="scss">//
-// The button component
+// Button
 //
-// @param  hash  properties for decoration
+// @param  hash  $params  properties for decoration
 //
 .c-btn {
-  @include _btn({
-    'background-color': null,
-    'border-color'    : null,
-    'border-size'     : null,
-  });
+  @include _btn((
+    background-color: null,
+    border: null,
+  ));
 }</code></pre>
 
                 <pre><code class="html">&lt;a class="c-btn" role="button"&gt;btn&lt;/a&gt;</code></pre>
@@ -150,7 +148,7 @@
                 <h1 class="c-section__h1">_card</h1>
 
                 <pre><code class="scss">//
-// The card componet
+// Card
 //
 .c-card {
   @include _card();
@@ -170,23 +168,29 @@
                 <h1 class="c-section__h1">_checkbox</h1>
 
                 <pre><code class="scss">//
-// The checkbox component
+// Checkbox
 //
 .c-checkbox {
-  @include _checkbox();
+  @include _checkbox((
+    size: $_base-font-size-px,
+    border-radius: $_border-radius,
+  ));
 }</code></pre>
 
-                <pre><code class="html">&lt;span class="c-checkbox"&gt;
-  &lt;input type="checkbox"&gt;
-  &lt;label class="c-checkbox__label"&gt;Label&lt;/label&gt;
-&lt;/span&gt;</code></pre>
+                <pre><code class="html">&lt;label&gt;
+  &lt;span class=&quot;c-checkbox&quot;&gt;
+    &lt;input type=&quot;checkbox&quot;&gt;
+    &lt;span class=&quot;c-checkbox__control&quot;&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  ...
+&lt;/label&gt;</code></pre>
               </section>
 
               <section class="c-section c-section--border" id="_container">
                 <h1 class="c-section__h1">_container</h1>
 
                 <pre><code class="scss">//
-// The container component
+// Container
 //
 // _container-max-width: 1200px !default;
 //
@@ -203,15 +207,15 @@
                 <h1 class="c-section__h1">_drawer <span class="c-label">JS</span></h1>
 
                 <pre><code class="scss">//
-// The drawer component
+// Drawer
 //
-// @param  hash  properties for decoration
+// @param  hash  $params  properties for decoration
 //
 .c-drawer {
   @include _drawer((
-    'background-color': _light($_color-black),
-    'width'           : ($_base-line-height * 10),
-    'max-width'       : 80%,
+    background-color: _light($_color-black),
+    width: ($_base-line-height * 10),
+    max-width: 80%,
   ));
 }</code></pre>
 
@@ -225,7 +229,7 @@ new BasisDrawer();</code></pre>
       &lt;li class=&quot;c-drawer__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;menu&lt;/a&gt;&lt;/li&gt;
       &lt;li class=&quot;c-drawer__item&quot;&gt;
         &lt;a href=&quot;#&quot;&gt;menu&lt;/a&gt;
-        &lt;div class=&quot;c-drawer__toggle&quot; data-c=&quot;drawer__toggle&quot; aria-expanded=&quot;false&quot;&gt;&gt;&lt;/div&gt;
+        &lt;div class=&quot;c-drawer__toggle&quot; data-c=&quot;drawer__toggle&quot; aria-expanded=&quot;false&quot;&gt;&amp;gt;&lt;/div&gt;
         &lt;ul class=&quot;c-drawer__submenu&quot; data-c=&quot;drawer__submenu&quot; aria-hidden=&quot;true&quot;&gt;
           &lt;li class=&quot;c-drawer__subitem&quot;&gt;&lt;a href=&quot;#&quot;&gt;submenu&lt;/a&gt;&lt;/li&gt;
           &lt;li class=&quot;c-drawer__subitem&quot;&gt;&lt;a href=&quot;#&quot;&gt;submenu&lt;/a&gt;&lt;/li&gt;
@@ -234,15 +238,19 @@ new BasisDrawer();</code></pre>
     &lt;/ul&gt;
   &lt;/nav&gt;
 &lt;/div&gt;
-
-&lt;div class=&quot;_c-hamburger-btn&quot; data-c=&quot;drawer-btn&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;drawer&quot;&gt;&lt;/div&gt;</code></pre>
+//
+&lt;div class=&quot;_c-hamburger-btn&quot; data-c=&quot;drawer-btn&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;drawer&quot;&gt;
+  &lt;div class=&quot;_c-hamburger-btn__bar&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;_c-hamburger-btn__bar&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;_c-hamburger-btn__bar&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
               </section>
 
               <section class="c-section c-section--border" id="_flex-media">
                 <h1 class="c-section__h1">_flex-media</h1>
 
                 <pre><code class="scss">//
-// The media component. When smartphone size, vertically aligned.
+// Flexible Media
 //
 .c-flex-media {
   @include _flex-media();
@@ -262,18 +270,10 @@ new BasisDrawer();</code></pre>
                 <h1 class="c-section__h1">_form-control</h1>
 
                 <pre><code class="scss">//
-// The form control component
-//
-// @param  hash  properties for decoration
+// Form Control
 //
 .c-form-control {
-  @include _form-control((
-    'background-color'         : #fff,
-    'border-size'              : 1px,
-    'border-color'             : #ccc,
-    'disabled-background-color': #eee,
-    'readonly-background-color': #eee,
-  ));
+  @include _form-control();
 }</code></pre>
 
                 <pre><code class="html">&lt;input type="text" class="c-form-control"&gt;</code></pre>
@@ -283,16 +283,16 @@ new BasisDrawer();</code></pre>
                 <h1 class="c-section__h1">_hamburger-btn</h1>
 
                 <pre><code class="scss">//
-// The hamberger button component
+// Hamburger Button
 //
-// @param  hash  properties for decoration
+// @param  hash  $params  properties for decoration
 //
 .c-hamburger-btn {
   @include _hamburger-btn((
-    'height'    : 16px,
-    'width'     : 22px,
-    'bar-height': 2px,
-    'color'     : $_color-text,
+    height: 16px,
+    width: 22px,
+    bar-height: 2px,
+    color: $_color-text,
   ));
 }</code></pre>
 
@@ -307,7 +307,7 @@ new BasisDrawer();</code></pre>
                 <h1 class="c-section__h1">_hero</h1>
 
                 <pre><code class="scss">//
-// The hero component
+// Hero
 //
 .c-hero {
   @include _hero();
@@ -320,19 +320,25 @@ new BasisDrawer();</code></pre>
 &lt;/div&gt;</code></pre>
               </section>
 
+              <section class="c-section c-section--border" id="_ic">
+                <h1 class="c-section__h1">_ic</h1>
+
+                <pre><code class="scss">//
+// Icon Font
+//
+.c-ic {
+  @include _ic();
+}</code></pre>
+              </section>
+
               <section class="c-section c-section--border" id="_input-group">
                 <h1 class="c-section__h1">_input-group</h1>
 
                 <pre><code class="scss">//
-// The input group component
+// Input Group
 //
-// @param  hash  properties for decoration
-//
-.c-input-group {
-  @include _input-group((
-    border-size : 1px,
-    border-color: _light($_color-gray),
-  ));
+// .c-input-group {
+//   @include _input-group();
 }</code></pre>
 
                 <pre><code class="html">&lt;div class="c-input-group"&gt;
@@ -348,7 +354,7 @@ new BasisDrawer();</code></pre>
                 <h1 class="c-section__h1">_media</h1>
 
                 <pre><code class="scss">//
-// The media component
+// Media
 //
 .c-media {
   @include _media();
@@ -368,7 +374,7 @@ new BasisDrawer();</code></pre>
                 <h1 class="c-section__h1">_navbar</h1>
 
                 <pre><code class="scss">//
-// The navbar component
+// Navbar
 //
 .c-navbar {
   @include _navbar();
@@ -392,36 +398,18 @@ new BasisNavbar();</code></pre>
 &lt;/ul&gt;</code></pre>
               </section>
 
-              <section class="c-section c-section--border" id="_radio">
-                <h1 class="c-section__h1">_radio</h1>
-
-                <pre><code class="scss">//
-// The radio component
-//
-// @param  hash  properties for decoration
-//
-.c-radio {
-  @include _radio();
-}</code></pre>
-
-                <pre><code class="html">&lt;span class="c-radio"&gt;
-  &lt;input type="radio"&gt;
-  &lt;label class="c-radio__label"&gt;Label&lt;/label&gt;
-&lt;/span&gt;</code></pre>
-              </section>
-
               <section class="c-section c-section--border" id="_page-effect">
                 <h1 class="c-section__h1">_page-effect <span class="c-label">JS</span></h1>
 
                 <pre><code class="scss">//
-// The page effect component
+// Page Effect
 //
-// @param  hash  properties for decoration
+// @param  hash  $params  properties for decoration
 //
 .c-page-effect {
   @include _page-effect((
-    'duration': .2s,
-    'color'   : #fff,
+    duration: .2s,
+    background-color: #fff,
   ));
 }</code></pre>
 
@@ -435,11 +423,34 @@ new BasisPageEffect();</code></pre>
 &lt;/div&gt;</code></pre>
               </section>
 
+              <section class="c-section c-section--border" id="_radio">
+                <h1 class="c-section__h1">_radio</h1>
+
+                <pre><code class="scss">//
+// Radio
+//
+// @param  hash  $params  properties for decoration
+//
+.c-radio {
+  @include _radio((
+    size: $_base-font-size-px,
+  ));
+}</code></pre>
+
+                <pre><code class="html">&lt;label&gt;
+  &lt;span class=&quot;c-radio&quot;&gt;
+    &lt;input type=&quot;radio&quot;&gt;
+    &lt;span class=&quot;c-radio__control&quot;&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  ...
+&lt;/label&gt;</code></pre>
+              </section>
+
               <section class="c-section c-section--border" id="_row">
                 <h1 class="c-section__h1">_row</h1>
 
                 <pre><code class="scss">//
-// The grid component
+// Grid System
 //
 // Grid wrapper
 //
@@ -448,7 +459,7 @@ new BasisPageEffect();</code></pre>
 //
 // Setting column width
 //
-// @param  int  $columns  molecule column size
+// @param  int  $columns      molecule column size
 // @param  int  $max-columns  denominator column size
 //
 @include _row__col($columns: null, $max-columns: null);
@@ -463,7 +474,7 @@ new BasisPageEffect();</code></pre>
 //
 // Setting column offset
 //
-// @param  int  $columns  molecule offset size
+// @param  int  $columns      molecule offset size
 // @param  int  $max-columns  denominator offset size
 //
 @include _row__col--offset($columns: null, $max-columns: null);
@@ -500,20 +511,18 @@ new BasisPageEffect();</code></pre>
                 <h1 class="c-section__h1">_select</h1>
 
                 <pre><code class="scss">//
-// The select component
-//
-// @param  hash  properties for decoration
+// Select
 //
 .c-select {
-  @include _select((
-    'background-color': null,
-    'border-color'    : null,
-    'border-size'     : null,
-  ));
+  @include _select();
 }</code></pre>
 
-                <pre><code class="html">&lt;span class="c-select"&gt;
-  &lt;select&gt;&lt;/select&gt;
+                <pre><code class="html">&lt;span class=&quot;c-select&quot; data-c=&quot;select&quot; aria-selected=&quot;false&quot;&gt;
+  &lt;select&gt;
+    &lt;option&gt;1&lt;/option&gt;
+    &lt;option&gt;2&lt;/option&gt;
+    &lt;option&gt;3&lt;/option&gt;&lt;/select&gt;
+  &lt;span class=&quot;c-select__label&quot; data-c=&quot;select__label&quot;&gt;&lt;/span&gt;
 &lt;/span&gt;</code></pre>
               </section>
 
@@ -521,18 +530,17 @@ new BasisPageEffect();</code></pre>
                 <h1 class="c-section__h1">_spinner-dots</h1>
 
                 <pre><code class="scss">//
-// The dots spinner component
+// Spinner (Circle)
 //
-// @param  hash  properties for decoration
+// @param  hash  $params  properties for decoration
 //
-.c-spinner-dots {
-  @include _spinner-dots((
-    'size'    : 10px,
-    'color'   : $_color-gray,
-    'delay'   : 0s,
-    'duration': 2s,
-    'scale'   : 1.3,
-  ));
+.c-spinner-circle {
+  @include _spinner-circle((
+    size: 20px,
+    color: _light($_color-gray),
+    border-size: 3px,
+    delay: 0s,
+    duration: 2s,
 }</code></pre>
 
                 <pre><code class="html">&lt;div class="c-spinner-dots"&gt;
@@ -546,18 +554,17 @@ new BasisPageEffect();</code></pre>
                 <h1 class="c-section__h1">_spinner-pulse</h1>
 
                 <pre><code class="scss">//
-// The pulse spinner component
+// Spinner (Dots)
 //
-// @param  hash  properties for decoration
+// @param  hash  $params  properties for decoration
 //
-.c-spinner-pulse {
-  @include _spinner-pulse((
-    'height'  : 16px,
-    'width'   : 5px,
-    'color'   : $_color-gray,
-    'delay'   : 0s,
-    'duration': 2s,
-    'scale'   : 1.3,
+.c-spinner-dots {
+  @include _spinner-dots((
+    size: 10px,
+    color: $_color-gray,
+    delay: 0s,
+    duration: 2s,
+    scale: 1.3,
   ));
 }</code></pre>
 
@@ -572,17 +579,18 @@ new BasisPageEffect();</code></pre>
                 <h1 class="c-section__h1">_spinner-circle</h1>
 
                 <pre><code class="scss">//
-// The circle spinner component
+// Spinner (Pulse)
 //
-// @param  hash  properties for decoration
+// @param  hash  $params  properties for decoration
 //
-.c-spinner-circle {
-  @include _spinner-circle((
-    'size'       : 20px,
-    'color'      : _light($_color-gray),
-    'border-size': 3px,
-    'delay'      : 0s,
-    'duration'   : 2s,
+.c-spinner-pulse {
+  @include _spinner-pulse((
+    height: 16px,
+    width: 5px,
+    color: $_color-gray,
+    delay: 0s,
+    duration: 2s,
+    scale: 1.3,
   ));
 }</code></pre>
 
@@ -611,6 +619,7 @@ new BasisPageEffect();</code></pre>
                   <li class="p-local-nav__item"><a href="#_form-control">_form-control</a></li>
                   <li class="p-local-nav__item"><a href="#_hamburger-btn">_hamburger-btn</a></li>
                   <li class="p-local-nav__item"><a href="#_hero">_hero</a></li>
+                  <li class="p-local-nav__item"><a href="#_ic">_ic</a></li>
                   <li class="p-local-nav__item"><a href="#_input-group">_input-group</a></li>
                   <li class="p-local-nav__item"><a href="#_media">_media</a></li>
                   <li class="p-local-nav__item"><a href="#_navbar">_navbar</a></li>
