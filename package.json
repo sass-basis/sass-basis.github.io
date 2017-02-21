@@ -10,9 +10,9 @@
     "url": "https://github.com/sass-basis/sass-basis.github.io"
   },
   "devDependencies": {
-    "autoprefixer": "^6.7.2",
+    "autoprefixer": "^6.7.4",
     "babel-preset-es2015-rollup": "^3.0.0",
-    "browser-sync": "^2.18.7",
+    "browser-sync": "^2.18.8",
     "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
     "gulp-cli": "^1.2.2",
@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "jquery": "^3.1.1",
-    "sass-basis": "^6.0.2",
+    "sass-basis": "^6.1.0",
     "sass-basis-layout": "^7.0.1"
   },
   "scripts": {

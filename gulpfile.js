@@ -124,6 +124,10 @@ gulp.task('favicon', function(){
   gulp.src(dir.src.favicon)
     .pipe(gulp.dest(dir.dist.favicon));
 } );
+gulp.task('font', function() {
+  return gulp.src('./node_modules/sass-basis/src/font/**')
+    .pipe(gulp.dest('./public/assets/font'));
+});
 
 /**
  * vendor packages
@@ -158,6 +162,6 @@ gulp.task('browsersync', function() {
   });
 });
 
-gulp.task('build', ['css', 'js', 'imagecopy', 'vendorcopy', 'favicon', 'ejs']);
+gulp.task('build', ['css', 'js', 'imagecopy', 'vendorcopy', 'favicon', 'ejs', 'font']);
 
 gulp.task('default', ['build', 'browsersync', 'watch']);
