@@ -30,6 +30,7 @@
   @include _alert((
     background-color: null,
     border: null,
+    padding: _space(.75),
   ));
 }</code></pre>
 
@@ -52,6 +53,7 @@
     border-color: null,
     border-size: null,
     triangle-size: 10px,
+    padding: _space(.75),
   ));
 }</code></pre>
 
@@ -74,6 +76,7 @@
     border-color: null,
     border-size: null,
     triangle-size: 10px,
+    padding: _space(.75),
   ));
 }</code></pre>
 
@@ -96,6 +99,7 @@
     border-color: null,
     border-size: null,
     triangle-size: 10px,
+    padding: _space(.75),
   ));
 }</code></pre>
 
@@ -118,6 +122,7 @@
     border-color: null,
     border-size: null,
     triangle-size: 10px,
+    padding: _space(.75),
   ));
 }</code></pre>
 
@@ -138,6 +143,7 @@
   @include _btn((
     background-color: null,
     border: null,
+    padding: _space(.5) _space(1),
   ));
 }</code></pre>
 
@@ -150,8 +156,13 @@
                 <pre><code class="scss">//
 // Card
 //
+// @param  hash  $params  properties for decoration
+//
 .c-card {
-  @include _card();
+  @include _card((
+    background-color: null,
+    padding: _space(.75),
+  ));
 }</code></pre>
 
                 <pre><code class="html">&lt;div class="c-card"&gt;
@@ -332,6 +343,66 @@ new BasisDrawer();</code></pre>
 //
 .c-ic {
   @include _ic();
+}</code></pre>
+              </section>
+
+              <section class="c-section c-section--border" id="_ib-row">
+                <h1 class="c-section__h1">_ib-row</h1>
+
+                <pre><code class="scss">//
+// Grid System (Inline Block Base)
+//
+// Grid wrapper
+//
+@include _ib-row();
+
+//
+// Setting column width
+//
+// @param  int  $columns      molecule column size
+// @param  int  $max-columns  denominator column size
+//
+@include _ib-row__col($columns: null, $max-columns: null);
+
+//
+// Setting column width
+//
+// @param  length  $width
+//
+@include _ib-row__col--width($width);
+
+//
+// Setting column offset
+//
+// @param  int  $columns      molecule offset size
+// @param  int  $max-columns  denominator offset size
+//
+@include _ib-row__col--offset($columns: null, $max-columns: null);
+
+//
+// Adding margin for the column
+//
+// @param  int  $coefficient
+//
+@include _ib-row__col--margin($coefficient);
+
+//
+// Adding margin for the row
+//
+// @param  int  $coefficient
+//
+@include _ib-row--margin($coefficient);
+
+.c-row {
+  @include _ib-row();
+  &__col {
+    @include _ib-row__col();
+  &--1-3 {
+    @include _ib-row__col(1, 3);
+  }
+  &--offset-1-3 {
+    @include _ib-row__col--offset(1, 3);
+  }
 }</code></pre>
               </section>
 
@@ -627,6 +698,7 @@ new BasisSelect();</code></pre>
                   <li class="p-local-nav__item"><a href="#_hamburger-btn">_hamburger-btn</a></li>
                   <li class="p-local-nav__item"><a href="#_hero">_hero</a></li>
                   <li class="p-local-nav__item"><a href="#_ic">_ic</a></li>
+                  <li class="p-local-nav__item"><a href="#_ib-row">_ib-row</a></li>
                   <li class="p-local-nav__item"><a href="#_input-group">_input-group</a></li>
                   <li class="p-local-nav__item"><a href="#_media">_media</a></li>
                   <li class="p-local-nav__item"><a href="#_navbar">_navbar</a></li>
