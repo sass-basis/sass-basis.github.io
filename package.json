@@ -34,6 +34,8 @@
     "sass-basis-layout": "^7.0.1"
   },
   "scripts": {
-    "gulp": "gulp"
+    "gulp": "gulp",
+    "build": "gulp build",
+    "start": "gulp"
   }
 }

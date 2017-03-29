@@ -24,7 +24,6 @@ var dir = {
     css    : 'src/css',
     js     : 'src/js',
     images : 'src/images',
-    vendor : 'src/vendor',
     favicon: 'src/favicon.ico',
     ejs : [
       'src/ejs/**/*.ejs',
@@ -35,7 +34,6 @@ var dir = {
     css    : 'public/assets/css',
     js     : 'public/assets/js',
     images : 'public/assets/images',
-    vendor : 'public/assets/vendor',
     favicon: 'public',
     ejs    : 'public',
   }
@@ -104,8 +102,7 @@ gulp.task('ejs', function() {
         version: '6.3.2',
         css    : '/assets/css',
         js     : '/assets/js',
-        images : '/assets/images',
-        is_front_page: false
+        images : '/assets/images'
       },
       {},
       {ext: '.html'})
@@ -128,14 +125,6 @@ gulp.task('font', function() {
   return gulp.src('./node_modules/sass-basis/src/font/**')
     .pipe(gulp.dest('./public/assets/font'));
 });
-
-/**
- * vendor packages
- */
-gulp.task( 'vendorcopy', function(){
-  gulp.src(dir.src.vendor + '/**')
-    .pipe(gulp.dest(dir.dist.vendor));
-} );
 
 /**
  * Auto Compile.
@@ -162,6 +151,6 @@ gulp.task('browsersync', function() {
   });
 });
 
-gulp.task('build', ['css', 'js', 'imagecopy', 'vendorcopy', 'favicon', 'ejs', 'font']);
+gulp.task('build', ['css', 'js', 'imagecopy', 'favicon', 'ejs', 'font']);
 
 gulp.task('default', ['build', 'browsersync', 'watch']);
