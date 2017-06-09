@@ -213,6 +213,16 @@
 &lt;/div&gt;</code></pre>
               </section>
 
+              <section class="c-section c-section--border" id="content">
+                <h1 class="c-section__h1">Content</h1>
+                <p>
+                  Each elements default margin is 0. If you use <code>._c-content</code> or <code>@include _content()</code>, vertical rhythm is applied to elements. <a href="./foundation.html">See more</a>
+                </p>
+                <pre><code class="html">&lt;div class=&quot;_c-content&quot;&gt;
+  ...
+&lt;/div&gt;</code></pre>
+              </section>
+
               <section class="c-section c-section--border" id="copyright">
                 <h1 class="c-section__h1">Copyright</h1>
                 <pre><code class="html">&lt;div class=&quot;_c-copyright&quot;&gt;
@@ -1364,18 +1374,18 @@ or
                 <h2 class="c-section__h2">Standard</h2>
                 <pre><code class="html">&lt;span class=&quot;_c-select&quot; data-c=&quot;select&quot; aria-selected=&quot;false&quot;&gt;
   &lt;select&gt;
-    &lt;option&gt;1&lt;/option&gt;
-    &lt;option&gt;2&lt;/option&gt;
-    &lt;option&gt;3&lt;/option&gt;
+    &lt;option value="1"&gt;label-1&lt;/option&gt;
+    &lt;option value="2"&gt;label-2&lt;/option&gt;
+    &lt;option value="3"&gt;label-3&lt;/option&gt;
   &lt;/select&gt;
   &lt;span class=&quot;_c-select__label&quot; data-c=&quot;select__label&quot;&gt;&lt;/span&gt;
 &lt;/span&gt;</code></pre>
 
                 <span class="_c-select" data-c="select" aria-selected="false">
                   <select>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
+                    <option value="1">label-1</option>
+                    <option value="2">label-2</option>
+                    <option value="3">label-3</option>
                   </select>
                   <span class="_c-select__label" data-c="select__label"></span>
                 </span>
@@ -1383,18 +1393,18 @@ or
                 <h2 class="c-section__h2">Block</h2>
                 <pre><code class="html">&lt;span class=&quot;_c-select _c-select--block&quot; data-c=&quot;select&quot; aria-selected=&quot;false&quot;&gt;
   &lt;select&gt;
-    &lt;option&gt;1&lt;/option&gt;
-    &lt;option&gt;2&lt;/option&gt;
-    &lt;option&gt;3&lt;/option&gt;
+    &lt;option value="1"&gt;label-1&lt;/option&gt;
+    &lt;option value="2"&gt;label-2&lt;/option&gt;
+    &lt;option value="3"&gt;label-3&lt;/option&gt;
   &lt;/select&gt;
   &lt;span class=&quot;_c-select__label&quot; data-c=&quot;select__label&quot;&gt;&lt;/span&gt;
 &lt;/span&gt;</code></pre>
 
                 <span class="_c-select _c-select--block" data-c="select" aria-selected="false">
                   <select>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
+                    <option value="1">label-1</option>
+                    <option value="2">label-2</option>
+                    <option value="3">label-3</option>
                   </select>
                   <span class="_c-select__label" data-c="select__label"></span>
                 </span>
@@ -1460,6 +1470,7 @@ or
                   <li class="p-local-nav__item"><a href="#card">Card</a></li>
                   <li class="p-local-nav__item"><a href="#checkbox">Checkbox</a></li>
                   <li class="p-local-nav__item"><a href="#wrappers">Wrappers</a></li>
+                  <li class="p-local-nav__item"><a href="#content">Content</a></li>
                   <li class="p-local-nav__item"><a href="#copyright">Copyright</a></li>
                   <li class="p-local-nav__item"><a href="#drawer">Drawer</a></li>
                   <li class="p-local-nav__item"><a href="#entries">Entries</a></li>

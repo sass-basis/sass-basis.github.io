@@ -23,6 +23,9 @@
                 <p>
                   Basis offers a typography that respects the vertical rhythm. If you are Sass user, by overwriting the following variables, it is possible to customize the typography of taste without breaking the vertical rhythm.
                 </p>
+                <p>
+                  Each elements default margin is 0. If you use <code>._c-content</code> or <code>@include _content()</code>, vertical rhythm is applied to elements.
+                </p>
 
                 <pre><code class="scss">//
 // Default font size
@@ -58,7 +61,7 @@ $_margin-coefficient: 1;
 
 @import /PATH/TO/basis/src/css/basis;</code></pre>
 
-                <blockquote>
+                <blockquote class="_c-content">
                   <h1>h1. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h1>
 
                   <p>
