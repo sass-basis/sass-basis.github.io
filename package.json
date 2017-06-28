@@ -1,6 +1,5 @@
 {
-  "name": "sass-basis.github.io",
-  "version": "6.5.0",
+  "version": "7.0.0",
   "main": "index.html",
   "author": "inc2734",
   "license": "MIT",
@@ -20,7 +19,7 @@
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^7.0.0",
     "gulp-rename": "^1.2.2",
-    "gulp-rollup": "^2.11.0",
+    "gulp-rollup": "^2.13.0",
     "gulp-sass": "^3.1.0",
     "gulp-sass-glob": "^1.0.8",
     "gulp-uglify": "^3.0.0",
@@ -30,8 +29,8 @@
   },
   "dependencies": {
     "jquery": "^3.2.1",
-    "sass-basis": "^6.5.0",
-    "sass-basis-layout": "^7.0.2"
+    "sass-basis": "^7.0.0",
+    "sass-basis-layout": "^8.0.1"
   },
   "scripts": {
     "gulp": "gulp",

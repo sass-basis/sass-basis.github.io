@@ -1,6 +1,5 @@
 .c-btn {
-  @extend .#{$_prefix}c-btn;
-  @include _transition-all();
+  @include _transition(all);
   border: none;
   border-radius: 3px;
   @include _padding(.5, 1);

@@ -1,240 +1,239 @@
 <%- include('_layout/_head', { 'title': 'Basis : A lightweight responsive Sass/CSS framework based on flexible box' }) %>
-<body class="_l-body" data-sticky-footer="true">
+<body class="l-body" data-sticky-footer="true">
 <%- include('_parts/_ga') %>
 <%- include('_object/_component/_page-effect') %>
-<div class="_c-drawer" data-c="drawer">
 
-  <%- include('_object/_project/_drawer') %>
+<%- include('_object/_project/_drawer') %>
 
-  <div id="container" class="_l-container" data-l="container">
-    <%- include('_layout/_header') %>
+<div id="container" class="l-container">
+  <%- include('_layout/_header') %>
 
-    <div id="contents" class="_l-contents" data-l="contents">
+  <div id="contents" class="l-contents">
 
-      <main id="main" class="_l-main" role="main">
+    <main id="main" class="l-main" role="main">
 
-        <section class="_c-hero p-hero p-hero--full">
-          <div class="_c-hero__content">
-            <div class="_c-container">
-              <div class="p-hero__version">
-                Currently v<%= version %>　Licence MIT License
+      <section class="c-hero p-hero p-hero--full">
+        <div class="c-hero__content">
+          <div class="c-container">
+            <div class="p-hero__version">
+              Currently v<%= version %>　Licence MIT License
+            </div>
+            <h1 class="p-hero__description">
+              BUILD RESPONSIVE DESIGN FASTER
+            </h1>
+            <div class="c-row c-row--margin-s c-row--lg-margin-l">
+              <div class="c-row__col c-row__col--1-1 c-row__col--lg-offset-1-4 c-row__col--lg-1-4">
+                <a href="https://github.com/sass-basis/basis" target="_blank" class="c-btn c-btn--block c-btn--ghost"><i class="fa fa-github"></i> View on GitHub</a>
               </div>
-              <h1 class="p-hero__description">
-                BUILD RESPONSIVE DESIGN FASTER
-              </h1>
-              <div class="_c-row _c-row--margin-s _c-row--lg-margin-l">
-                <div class="_c-row__col _c-row__col--1-1 _c-row__col--lg-offset-1-4 _c-row__col--lg-1-4">
-                  <a href="https://github.com/sass-basis/basis" target="_blank" class="c-btn c-btn--block c-btn--ghost"><i class="fa fa-github"></i> View on GitHub</a>
-                </div>
-                <div class="_c-row__col _c-row__col--1-1 _c-row__col--lg-1-4">
-                  <a href="https://www.npmjs.com/package/sass-basis" target="_blank" class="c-btn c-btn--block c-btn--ghost">View on npm</a>
-                </div>
+              <div class="c-row__col c-row__col--1-1 c-row__col--lg-1-4">
+                <a href="https://www.npmjs.com/package/sass-basis" target="_blank" class="c-btn c-btn--block c-btn--ghost">View on npm</a>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="c-section">
-          <div class="_c-container">
-            <h1 class="c-section__title">What is Basis?</h1>
-            <div class="_c-row _c-row--margin _c-row--md-fill">
-              <div class="_c-row__col _c-row__col--1-1 _c-row__col--md-1-3">
-                <section class="p-media _u-text-center">
-                  <div class="p-media__figure">
-                    <i class="fa fa-code fa-3x"></i>
+      <section class="c-section">
+        <div class="c-container">
+          <h1 class="c-section__title">What is Basis?</h1>
+          <div class="c-row c-row--margin c-row--md-fill">
+            <div class="c-row__col c-row__col--1-1 c-row__col--md-1-3">
+              <section class="p-media u-text-center">
+                <div class="p-media__figure">
+                  <i class="fa fa-code fa-3x"></i>
+                </div>
+                <div class="p-media__body">
+                  <h1 class="p-media__title">Clean code development</h1>
+                  <div class="p-media__content">
+                    The Basis classes have prefix. And code style is <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/" target="_blank">BEM (MindBemding)</a> and using Sass/SCSS. You can use it as CSS framework or Sass/SCSS mixin library.
                   </div>
-                  <div class="p-media__body">
-                    <h1 class="p-media__title">Clean code development</h1>
-                    <div class="p-media__content">
-                      The Basis classes have prefix. And code style is <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/" target="_blank">BEM (MindBemding)</a> and using Sass/SCSS. You can use it as CSS framework or Sass/SCSS mixin library.
-                    </div>
+                </div>
+              </section>
+            </div>
+            <div class="c-row__col c-row__col--1-1 c-row__col--md-1-3">
+              <section class="p-media u-text-center">
+                <div class="p-media__figure">
+                  <i class="fa fa-mobile fa-3x"></i>
+                </div>
+                <div class="p-media__body">
+                  <h1 class="p-media__title">Responsive &amp; Mobile first</h1>
+                  <div class="p-media__content">
+                    The grid system is flexbox based. So it's simple and excellent than the float layout! Same height box, Reverse grid, Equal spacing layout and more.
                   </div>
-                </section>
-              </div>
-              <div class="_c-row__col _c-row__col--1-1 _c-row__col--md-1-3">
-                <section class="p-media _u-text-center">
-                  <div class="p-media__figure">
-                    <i class="fa fa-mobile fa-3x"></i>
+                </div>
+              </section>
+            </div>
+            <div class="c-row__col c-row__col--1-1 c-row__col--md-1-3">
+              <section class="p-media u-text-center">
+                <div class="p-media__figure">
+                  <i class="fa fa-magic fa-3x"></i>
+                </div>
+                <div class="p-media__body">
+                  <h1 class="p-media__title">Lightweight &amp; Minimum style</h1>
+                  <div class="p-media__content">
+                    The Basis style is lightweight and minimum. It just may not be enough, but so overwritable.
                   </div>
-                  <div class="p-media__body">
-                    <h1 class="p-media__title">Responsive &amp; Mobile first</h1>
-                    <div class="p-media__content">
-                      The grid system is flexbox based. So it's simple and excellent than the float layout! Same height box, Reverse grid, Equal spacing layout and more.
-                    </div>
-                  </div>
-                </section>
-              </div>
-              <div class="_c-row__col _c-row__col--1-1 _c-row__col--md-1-3">
-                <section class="p-media _u-text-center">
-                  <div class="p-media__figure">
-                    <i class="fa fa-magic fa-3x"></i>
-                  </div>
-                  <div class="p-media__body">
-                    <h1 class="p-media__title">Lightweight &amp; Minimum style</h1>
-                    <div class="p-media__content">
-                      The Basis style is lightweight and minimum. It just may not be enough, but so overwritable.
-                    </div>
-                  </div>
-                </section>
-              </div>
+                </div>
+              </section>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="c-section c-section--bg">
-          <div class="_c-container">
-            <h1 class="c-section__title">Why it's awesome?</h1>
-            <div class="_c-row _c-row--margin">
-              <div class="_c-row__col _c-row__col--1-1">
+      <section class="c-section c-section--bg">
+        <div class="c-container">
+          <h1 class="c-section__title">Why it's awesome?</h1>
+          <div class="c-row c-row--margin">
+            <div class="c-row__col c-row__col--1-1">
 
-                <div class="_c-row _c-row--margin">
-                  <div class="_c-row__col _c-row__col--1-1 _c-row__col--md-1-3">
-                    <section class="p-media__body">
-                      <h1 class="p-media__title">Architecture</h1>
-                      <div class="p-media__content">
-                        CSS architecture of Basis is based on <a href="https://github.com/hiloki/flocss" target="_blank">FLOCSS</a>. Also, the "core" layer has mixins and abstract of the components. So You can also use it as a mixin library without using classes.
-                      </div>
-                    </section>
-                  </div>
-                  <div class="_c-row__col _c-row__col--1-1 _c-row__col--md-2-3">
-                    <pre><code class="html">├ core/
+              <div class="c-row c-row--margin">
+                <div class="c-row__col c-row__col--1-1 c-row__col--md-1-3">
+                  <section class="p-media__body">
+                    <h1 class="p-media__title">Architecture</h1>
+                    <div class="p-media__content">
+                      CSS architecture of Basis is based on <a href="https://github.com/hiloki/flocss" target="_blank">FLOCSS</a>. Also, the "core" layer has mixins and abstract of the components. So You can also use it as a mixin library without using classes.
+                    </div>
+                  </section>
+                </div>
+                <div class="c-row__col c-row__col--1-1 c-row__col--md-2-3">
+                  <pre><code class="html">├ core/
 │ ├ functions/
 │ ├ mixins/
 │ └ abstracts/
 ├ foundation/
 ├ layout/
 └ object/
-   ├ component/
-   ├ project/
-   └ utility/</code></pre>
-                  </div>
+ ├ component/
+ ├ project/
+ └ utility/</code></pre>
                 </div>
-
               </div>
-              <div class="_c-row__col _c-row__col--1-1">
 
-                <div class="_c-row _c-row--margin">
-                  <div class="_c-row__col _c-row__col--1-1 _c-row__col--md-1-3">
-                    <section class="p-media__body">
-                      <h1 class="p-media__title">Vertical Rhythum</h1>
-                      <div class="p-media__content">
-                        Basis has incorporated the concept of vertical rhythm. So you can be a good-balanced design.
-                      </div>
-                    </section>
-                  </div>
-                  <div class="_c-row__col _c-row__col--1-1 _c-row__col--md-2-3">
-                    <pre><code class="sass">@mixin _vertical-rhythm($font-size, $coefficient: 1) {
-  $between-lines: _strip-unit(_rem2px($_between-lines));
-  $base-line-height : _strip-unit(_rem2px($_base-line-height));
-  $base-font-size: _strip-unit(_rem2px($_base-font-size));
-  $font-size: _strip-unit($font-size);
+            </div>
+            <div class="c-row__col c-row__col--1-1">
+
+              <div class="c-row c-row--margin">
+                <div class="c-row__col c-row__col--1-1 c-row__col--md-1-3">
+                  <section class="p-media__body">
+                    <h1 class="p-media__title">Vertical Rhythum</h1>
+                    <div class="p-media__content">
+                      Basis has incorporated the concept of vertical rhythm. So you can be a good-balanced design.
+                    </div>
+                  </section>
+                </div>
+                <div class="c-row__col c-row__col--1-1 c-row__col--md-2-3">
+                  <pre><code class="sass">@mixin _vertical-rhythm($font-size, $coefficient: 1) {
+$between-lines: _strip-unit(_rem2px($_between-lines));
+$base-line-height : _strip-unit(_rem2px($_base-line-height));
+$base-font-size: _strip-unit(_rem2px($_base-font-size));
+$font-size: _strip-unit($font-size);
 ...</code></pre>
-                  </div>
                 </div>
-
               </div>
-              <div class="_c-row__col _c-row__col--1-1">
 
-                <div class="_c-row _c-row--margin">
-                  <div class="_c-row__col _c-row__col--1-1 _c-row__col--md-1-3">
-                    <section class="p-media__body">
-                      <h1 class="p-media__title">Flexible grid system</h1>
-                      <div class="p-media__content">
-                        Clean because using a flexible box. The grid system is flexbox based. You can use 1 to 12 of the grid size. <code>._c-row__col--1-1</code>,  <code>._c-row__col--2-3</code>, <code>._c-row__col--1-12</code> and more.
-                      </div>
-                    </section>
-                  </div>
-                  <div class="_c-row__col _c-row__col--1-1 _c-row__col--md-2-3">
-                    <pre><code>&lt;div class="_c-row"&gt;
-  &lt;div class="_c-row__col _c-row__col--1-1 _c-row__col--md-1-2"&gt;...&lt;/div&gt;
-  &lt;div class="_c-row__col _c-row__col--1-1 _c-row__col--md-1-2"&gt;...&lt;/div&gt;
+            </div>
+            <div class="c-row__col c-row__col--1-1">
+
+              <div class="c-row c-row--margin">
+                <div class="c-row__col c-row__col--1-1 c-row__col--md-1-3">
+                  <section class="p-media__body">
+                    <h1 class="p-media__title">Flexible grid system</h1>
+                    <div class="p-media__content">
+                      Clean because using a flexible box. The grid system is flexbox based. You can use 1 to 12 of the grid size. <code>.c-row__col--1-1</code>,  <code>.c-row__col--2-3</code>, <code>.c-row__col--1-12</code> and more.
+                    </div>
+                  </section>
+                </div>
+                <div class="c-row__col c-row__col--1-1 c-row__col--md-2-3">
+                  <pre><code>&lt;div class="c-row"&gt;
+&lt;div class="c-row__col c-row__col--1-1 c-row__col--md-1-2"&gt;...&lt;/div&gt;
+&lt;div class="c-row__col c-row__col--1-1 c-row__col--md-1-2"&gt;...&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class="_c-row"&gt;
-  &lt;div class="_c-row__col _c-row__col--1-1 _c-row__col--md-1-3"&gt;...&lt;/div&gt;
-  &lt;div class="_c-row__col _c-row__col--1-1 _c-row__col--md-1-3"&gt;...&lt;/div&gt;
-  &lt;div class="_c-row__col _c-row__col--1-1 _c-row__col--md-1-3"&gt;...&lt;/div&gt;
+&lt;div class="c-row"&gt;
+&lt;div class="c-row__col c-row__col--1-1 c-row__col--md-1-3"&gt;...&lt;/div&gt;
+&lt;div class="c-row__col c-row__col--1-1 c-row__col--md-1-3"&gt;...&lt;/div&gt;
+&lt;div class="c-row__col c-row__col--1-1 c-row__col--md-1-3"&gt;...&lt;/div&gt;
 &lt;/div&gt;</code></pre>
-                  </div>
                 </div>
-
               </div>
+
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="c-section">
-          <div class="_c-container">
-            <h1 class="c-section__title">Demo</h1>
-            <div class="_c-row _c-row--margin _c-row--md-fill">
-              <div class="_c-row__col _c-row__col--1-1 _c-row__col--md-1-3">
-                <section class="p-media _u-text-center">
-                  <div class="p-media__figure">
-                    <img src="./assets/images/templates/integrity.png" alt="" />
-                  </div>
-                  <div class="p-media__body">
-                    <h1 class="p-media__title _u-text-center">integrity</h1>
-                    <div class="p-media__content">
-                      <div class="_c-row _c-row--margin-s">
-                        <div class="_c-row__col _c-row__col--1-1">
-                          <a class="c-btn c-btn--block c-btn--launch" href="https://sass-basis.github.io/integrity/" target="_blank"><i class="fa fa-tv"></i>Launch</a>
-                        </div>
-                        <div class="_c-row__col _c-row__col--1-1">
-                          <a class="c-btn c-btn--block c-btn--download" href="https://github.com/sass-basis/integrity/archive/master.zip" target="_blank"><i class="fa fa-download"></i>Download <small>(Source files only)</small></a>
-                        </div>
-                        <div class="_c-row__col _c-row__col--1-1">
-                          <a class="c-btn c-btn--block c-btn--buy" href="https://inc2734.stores.jp/items/589ff07c100315512400be24" target="_blank"><i class="fa fa-shopping-cart"></i>Buy &yen;540 <small>(Included build files)</small></a>
-                        </div>
+      <section class="c-section">
+        <div class="c-container">
+          <h1 class="c-section__title">Demo</h1>
+          <div class="c-row c-row--margin c-row--md-fill">
+            <div class="c-row__col c-row__col--1-1 c-row__col--md-1-3">
+              <section class="p-media u-text-center">
+                <div class="p-media__figure">
+                  <img src="./assets/images/templates/integrity.png" alt="" />
+                </div>
+                <div class="p-media__body">
+                  <h1 class="p-media__title u-text-center">integrity</h1>
+                  <div class="p-media__content">
+                    <div class="c-row c-row--margin-s">
+                      <div class="c-row__col c-row__col--1-1">
+                        <a class="c-btn c-btn--block c-btn--launch" href="https://sass-basis.github.io/integrity/" target="_blank"><i class="fa fa-tv"></i>Launch</a>
+                      </div>
+                      <div class="c-row__col c-row__col--1-1">
+                        <a class="c-btn c-btn--block c-btn--download" href="https://github.com/sass-basis/integrity/archive/master.zip" target="_blank"><i class="fa fa-download"></i>Download <small>(Source files only)</small></a>
+                      </div>
+                      <div class="c-row__col c-row__col--1-1">
+                        <a class="c-btn c-btn--block c-btn--buy" href="https://inc2734.stores.jp/items/589ff07c100315512400be24" target="_blank"><i class="fa fa-shopping-cart"></i>Buy &yen;540 <small>(Included build files)</small></a>
                       </div>
                     </div>
                   </div>
-                </section>
-              </div>
-              <div class="_c-row__col _c-row__col--1-1 _c-row__col--md-1-3">
-                <section class="p-media _u-text-center">
-                  <div class="p-media__figure">
-                    <img src="./assets/images/templates/improve.png" alt="" />
-                  </div>
-                  <div class="p-media__body">
-                    <h1 class="p-media__title _u-text-center">improve</h1>
-                  </div>
-                </section>
-              </div>
-              <div class="_c-row__col _c-row__col--1-1 _c-row__col--md-1-3">
-                <section class="p-media _u-text-center">
-                  <div class="p-media__figure">
-                    <img src="./assets/images/templates/affinity.png" alt="" />
-                  </div>
-                  <div class="p-media__body">
-                    <h1 class="p-media__title _u-text-center">affinity</h1>
-                  </div>
-                </section>
-              </div>
+                </div>
+              </section>
+            </div>
+            <div class="c-row__col c-row__col--1-1 c-row__col--md-1-3">
+              <section class="p-media u-text-center">
+                <div class="p-media__figure">
+                  <img src="./assets/images/templates/improve.png" alt="" />
+                </div>
+                <div class="p-media__body">
+                  <h1 class="p-media__title u-text-center">improve</h1>
+                </div>
+              </section>
+            </div>
+            <div class="c-row__col c-row__col--1-1 c-row__col--md-1-3">
+              <section class="p-media u-text-center">
+                <div class="p-media__figure">
+                  <img src="./assets/images/templates/affinity.png" alt="" />
+                </div>
+                <div class="p-media__body">
+                  <h1 class="p-media__title u-text-center">affinity</h1>
+                </div>
+              </section>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="c-section c-section--bg">
-          <div class="_c-container">
-            <div class="_c-row _c-row--margin">
-              <div class="_c-row__col _c-row__col--1-1 _c-row__col--md-1-2">
-                <h5>Contribute</h5>
-                Basis is open source, so if you want to take part in contributing please <a href="https://github.com/sass-basis/basis" target="_blank">fork the repo on Github</a> and send us a pull request. Or, if you find a bug <a href="https://github.com/sass-basis/basis/issues" target="_blank">create a new issue</a>.
-              </div>
-              <div class="_c-row__col _c-row__col--1-1 _c-row__col--md-1-2">
-                <h5>License</h5>
-                Basis licensed under <a href="https://opensource.org/licenses/MIT" target="_blank">MIT</a>. Basis is absolutely free for personal or commercial use.
-              </div>
+      <section class="c-section c-section--bg">
+        <div class="c-container">
+          <div class="c-row c-row--margin">
+            <div class="c-row__col c-row__col--1-1 c-row__col--md-1-2">
+              <h5>Contribute</h5>
+              Basis is open source, so if you want to take part in contributing please <a href="https://github.com/sass-basis/basis" target="_blank">fork the repo on Github</a> and send us a pull request. Or, if you find a bug <a href="https://github.com/sass-basis/basis/issues" target="_blank">create a new issue</a>.
+            </div>
+            <div class="c-row__col c-row__col--1-1 c-row__col--md-1-2">
+              <h5>License</h5>
+              Basis licensed under <a href="https://opensource.org/licenses/MIT" target="_blank">MIT</a>. Basis is absolutely free for personal or commercial use.
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-      </main>
-    </div>
-
-    <%- include('_layout/_footer') %>
+    </main>
   </div>
+
+  <%- include('_layout/_footer') %>
 </div>
+
 <%- include('_layout/_foot') %>
 </body>
 </html>

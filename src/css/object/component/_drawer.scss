@@ -1,0 +1,39 @@
+.#{$_prefix}c-drawer {
+  $item-padding-coefficient: 1;
+
+  background-color: $_color-black;
+
+  &, a {
+    color: #fff;
+  }
+
+  &__menu {
+    @include _list-unstyled();
+  }
+
+  &__item, &__subitem {
+    position: relative;
+  }
+
+  &__item {
+    @include _padding(.5, $item-padding-coefficient, 0);
+  }
+
+  &__submenu {
+    @include _list-unstyled();
+    @include _margin(0, ($item-padding-coefficient * -1), 0, 0);
+    padding-left: 1em;
+  }
+
+  &__subitem {
+    @include _padding(.5, $item-padding-coefficient, 0, 0);
+  }
+
+  &__toggle {
+    @include _position(absolute, _space(.5), 5px, 0);
+    @include _square($_base-line-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
