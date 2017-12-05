@@ -48,13 +48,23 @@ gulp.task('js', function() {
     .pipe(plumber())
     .pipe(rollup({
       allowRealFiles: true,
-      entry: dir.src.js + '/app.js',
+      input: dir.src.js + '/app.js',
       format: 'iife',
       plugins: [
         nodeResolve({ jsnext: true }),
         commonjs(),
         babel({
-          presets: ['es2015-rollup'],
+          presets: [
+            [
+              "env", {
+                "modules": false,
+                "targets": {
+                  "browsers": ['last 2 versions']
+                }
+              }
+            ]
+          ],
+          plugins: ['external-helpers'],
           babelrc: false
         })
       ]
@@ -84,7 +94,11 @@ gulp.task('css', function() {
       cascade: false
     })]))
     .pipe(gulp.dest(dir.dist.css))
-    .pipe(postcss([cssnano()]))
+    .pipe(postcss([
+      cssnano({
+        'zindex': false
+      })
+    ]))
     .pipe(rename({
       suffix: '.min'
     }))
@@ -99,7 +113,7 @@ gulp.task('ejs', function() {
     //.pipe(plumber())
     .pipe(ejs(
       {
-        version: '7.0.0',
+        version: '8.0.2',
         css    : '/assets/css',
         js     : '/assets/js',
         images : '/assets/images'
