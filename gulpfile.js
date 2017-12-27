@@ -113,7 +113,7 @@ gulp.task('ejs', function() {
     //.pipe(plumber())
     .pipe(ejs(
       {
-        version: '8.0.2',
+        version: '8.0.3',
         css    : '/assets/css',
         js     : '/assets/js',
         images : '/assets/images'
