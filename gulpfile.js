@@ -49,7 +49,9 @@ gulp.task('js', function() {
     .pipe(rollup({
       allowRealFiles: true,
       input: dir.src.js + '/app.js',
-      format: 'iife',
+      output: {
+        format: 'iife'
+      },
       plugins: [
         nodeResolve({ jsnext: true }),
         commonjs(),
@@ -154,7 +156,7 @@ gulp.task('watch', function() {
 /**
  * Browsersync
  */
-gulp.task('browsersync', function() {
+gulp.task('browsersync', ['build'], function() {
   browser_sync.init( {
     server: {
       baseDir: "public/"
