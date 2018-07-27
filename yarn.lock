@@ -3168,9 +3168,9 @@ node-gyp@^3.3.1:
     tar "^2.0.0"
     which "1"
 
-node-normalize-scss@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/node-normalize-scss/-/node-normalize-scss-3.0.0.tgz#119bf5d5bb71160465e9f1204c41f691d26ecf77"
+node-normalize-scss@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/node-normalize-scss/-/node-normalize-scss-8.0.0.tgz#b5be9c851cd9861266524a43a5bc83854506a7d6"
 
 node-pre-gyp@^0.10.0:
   version "0.10.0"
@@ -4182,12 +4182,12 @@ sass-basis-layout@^8.0.1:
   version "8.0.1"
   resolved "https://registry.yarnpkg.com/sass-basis-layout/-/sass-basis-layout-8.0.1.tgz#767778fd7c5e4834fa48f1abbb549febcb760034"
 
-sass-basis@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/sass-basis/-/sass-basis-9.0.0.tgz#54a654c38f870dc02590c936ad9fa1d2219f775b"
+sass-basis@^9.1.1:
+  version "9.1.1"
+  resolved "https://registry.yarnpkg.com/sass-basis/-/sass-basis-9.1.1.tgz#d97dc86d1a6b3a99b30029252620e5e9bd3902e4"
   dependencies:
     html5shiv "^3.7.3"
-    node-normalize-scss "^3.0.0"
+    node-normalize-scss "^8.0.0"
 
 sass-graph@^2.2.4:
   version "2.2.4"
