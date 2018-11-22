@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "jquery": "^3.2.1",
-    "sass-basis": "^9.2.3",
+    "sass-basis": "^9.2.4",
     "sass-basis-layout": "^8.0.1"
   },
   "scripts": {
