@@ -115,7 +115,7 @@ gulp.task('ejs', function() {
     //.pipe(plumber())
     .pipe(ejs(
       {
-        version: '9.2.3',
+        version: '9.2.7',
         css    : '/assets/css',
         js     : '/assets/js',
         images : '/assets/images'
