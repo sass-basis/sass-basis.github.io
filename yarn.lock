@@ -4126,13 +4126,15 @@ safe-regex@^1.1.0:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
 
-sass-basis-layout@^8.0.2:
-  version "8.0.2"
-  resolved "https://registry.yarnpkg.com/sass-basis-layout/-/sass-basis-layout-8.0.2.tgz#70acb75c040df84721497f1aec81edc3d6e2308c"
+sass-basis-layout@^8.0.3:
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/sass-basis-layout/-/sass-basis-layout-8.0.4.tgz#c937c342ca9615aa2e3a42528384203c93f11d84"
+  dependencies:
+    "@inc2734/add-custom-event" "^0.1.0"
 
-sass-basis@^9.2.9:
-  version "9.2.9"
-  resolved "https://registry.yarnpkg.com/sass-basis/-/sass-basis-9.2.9.tgz#455dd8e9b5197559b06cc88fc97a7904c54344e6"
+sass-basis@^9.2.10:
+  version "9.2.10"
+  resolved "https://registry.yarnpkg.com/sass-basis/-/sass-basis-9.2.10.tgz#5d12f22baf3852f3b93d50d1381b15c44c9ed6d5"
   dependencies:
     "@inc2734/add-custom-event" "^0.1.0"
     "@inc2734/for-each-html-nodes" "^0.2.0"

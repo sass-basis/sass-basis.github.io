@@ -1,5 +1,5 @@
 {
-  "version": "9.2.9",
+  "version": "9.2.10",
   "main": "index.html",
   "author": "inc2734",
   "license": "MIT",
@@ -31,8 +31,8 @@
   },
   "dependencies": {
     "jquery": "^3.2.1",
-    "sass-basis": "^9.2.9",
-    "sass-basis-layout": "^8.0.2"
+    "sass-basis": "^9.2.10",
+    "sass-basis-layout": "^8.0.3"
   },
   "scripts": {
     "gulp": "gulp",
