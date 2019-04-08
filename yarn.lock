@@ -5,10 +5,12 @@
 "@inc2734/add-custom-event@^0.1.0":
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/@inc2734/add-custom-event/-/add-custom-event-0.1.0.tgz#f8c991911b880019045d63bff12ffcc52078e02c"
+  integrity sha512-nOsNOBMokNtpW2oZc6FebCWAjwuX4K7EIC1pejAPs57FBrtv53L/rkK3Qhd4cOy5YJgR5ybTEHNAiMM8vaAIKw==
 
 "@inc2734/for-each-html-nodes@^0.2.0":
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@inc2734/for-each-html-nodes/-/for-each-html-nodes-0.2.0.tgz#e7f22830a32ab495fb219c79753075ac0f63ffce"
+  integrity sha512-IJNUcQh2V7DWLYx1nHMURmEdhfYScEldVD0d6xXWdP0dVYFrsXKCl27kTUS5QjGIC/07N2lrJT5qNKaTGM+BnA==
 
 abbrev@1:
   version "1.1.1"
@@ -2252,6 +2254,7 @@ html-comment-regex@^1.1.0:
 html5shiv@^3.7.3:
   version "3.7.3"
   resolved "https://registry.yarnpkg.com/html5shiv/-/html5shiv-3.7.3.tgz#d78a84a367bcb9a710100d57802c387b084631d2"
+  integrity sha1-14qEo2e8uacQEA1XgCw4ewhGMdI=
 
 http-errors@1.6.3, http-errors@~1.6.2:
   version "1.6.3"
@@ -3138,6 +3141,7 @@ node-gyp@^3.8.0:
 node-normalize-scss@^8.0.0:
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/node-normalize-scss/-/node-normalize-scss-8.0.0.tgz#b5be9c851cd9861266524a43a5bc83854506a7d6"
+  integrity sha512-eQMVmvs2Hj33v3m/jstZOBGOr0lO+Rr3tamGdZxBtiUbJ/WXywsLz/LhVQDSugxG4TEnfYyGxdfbRVKNxw+x7g==
 
 node-pre-gyp@^0.10.0:
   version "0.10.3"
@@ -4132,9 +4136,10 @@ sass-basis-layout@^8.0.3:
   dependencies:
     "@inc2734/add-custom-event" "^0.1.0"
 
-sass-basis@^9.2.10:
-  version "9.2.10"
-  resolved "https://registry.yarnpkg.com/sass-basis/-/sass-basis-9.2.10.tgz#5d12f22baf3852f3b93d50d1381b15c44c9ed6d5"
+sass-basis@^9.2.11:
+  version "9.2.11"
+  resolved "https://registry.yarnpkg.com/sass-basis/-/sass-basis-9.2.11.tgz#d6de4554c46acac9c454c2ba1498692c2a3b8028"
+  integrity sha512-cJcZsKiRQ+LsVw9X1Tr2VRXjk1pmKO0gJNY5BKoYgSz4bqk3i/Qu5Kx34GNHa/vW8dxeVx9hFz5BHT2Z7z5raA==
   dependencies:
     "@inc2734/add-custom-event" "^0.1.0"
     "@inc2734/for-each-html-nodes" "^0.2.0"
