@@ -1,7 +1,6 @@
 language: node_js
 sudo: false
-node_js:
-  - '6'
+node_js: 12
 branches:
   only:
     - develop
@@ -19,7 +18,7 @@ script:
   - ls | xargs rm -rf
   - rm -rf .gitignore .travis.yml
   - cd ../
-  - npm run gulp build
+  - npm run build
   - ls -la
   - ls -la public/
   - cp -R public/* gh-pages/

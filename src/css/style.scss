@@ -6,8 +6,8 @@ $_between-lines: (1rem / 3);
 $_font-path: '../font';
 
 @import '../../node_modules/sass-basis/src/css/basis';
-@import 'core/mixin/*';
-@import 'foundation/*';
-@import 'layout/*';
-@import 'object/component/*';
-@import 'object/project/*';
+@import 'core/mixin/mixin';
+@import 'foundation/foundation';
+@import 'layout/layout';
+@import 'object/component/component';
+@import 'object/project/project';

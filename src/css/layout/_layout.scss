@@ -1,5 +1,8 @@
 @import '../../../node_modules/sass-basis-layout/src/css/layout/container';
 
+@import 'header';
+@import 'footer';
+
 .#{$_prefix}l-container {
   background-color: #fff;
   overflow: hidden;
