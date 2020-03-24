@@ -1,5 +1,5 @@
 {
-  "version": "10.0.0",
+  "version": "10.0.1",
   "main": "index.html",
   "author": "inc2734",
   "license": "MIT",
@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "jquery": "^3.4.1",
-    "sass-basis": "^10.0.0",
+    "sass-basis": "^10.0.1",
     "sass-basis-layout": "^8.0.4"
   },
   "scripts": {
