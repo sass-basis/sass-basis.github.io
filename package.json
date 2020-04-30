@@ -26,7 +26,7 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "sass-basis": "^10.1.1",
     "sass-basis-layout": "^8.0.4"
   },
