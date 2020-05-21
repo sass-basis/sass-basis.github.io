@@ -18,6 +18,7 @@ script:
   - ls | xargs rm -rf
   - rm -rf .gitignore .travis.yml
   - cd ../
+  - npm rebuild node-sass
   - npm run build
   - ls -la
   - ls -la public/

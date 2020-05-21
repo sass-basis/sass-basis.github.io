@@ -9,25 +9,25 @@
     "url": "https://github.com/sass-basis/sass-basis.github.io"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.0",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
     "@wordpress/browserslist-config": "^2.6.0",
-    "autoprefixer": "^9.7.5",
+    "autoprefixer": "^9.8.0",
     "babel-loader": "^8.1.0",
     "browser-sync": "^2.26.7",
-    "cpy-cli": "^3.1.0",
+    "cpy-cli": "^3.1.1",
     "cssnano": "^4.1.10",
-    "ejs-cli": "^2.1.1",
-    "node-sass": "^4.13.1",
+    "ejs-cli": "^2.2.0",
+    "node-sass": "^4.14.1",
     "npm-run-all": "^4.1.5",
-    "postcss-cli": "^7.1.0",
+    "postcss-cli": "^7.1.1",
     "rimraf": "^3.0.2",
-    "webpack": "^4.42.1",
+    "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
-    "jquery": "^3.4.1",
-    "sass-basis": "^10.1.1",
+    "jquery": "^3.5.1",
+    "sass-basis": "^11.0.0",
     "sass-basis-layout": "^8.0.4"
   },
   "scripts": {
