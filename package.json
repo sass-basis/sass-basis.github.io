@@ -1,5 +1,5 @@
 {
-  "version": "11.0.1",
+  "version": "11.0.2",
   "main": "index.html",
   "author": "inc2734",
   "license": "MIT",
@@ -9,10 +9,10 @@
     "url": "https://github.com/sass-basis/sass-basis.github.io"
   },
   "devDependencies": {
-    "@babel/core": "^7.10.2",
-    "@babel/preset-env": "^7.10.2",
-    "@wordpress/browserslist-config": "^2.6.0",
-    "autoprefixer": "^9.8.0",
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "@wordpress/browserslist-config": "^2.7.0",
+    "autoprefixer": "^9.8.4",
     "babel-loader": "^8.1.0",
     "browser-sync": "^2.26.7",
     "cpy-cli": "^3.1.1",
@@ -23,11 +23,11 @@
     "postcss-cli": "^7.1.1",
     "rimraf": "^3.0.2",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
     "jquery": "^3.5.1",
-    "sass-basis": "^11.0.1",
+    "sass-basis": "^11.0.2",
     "sass-basis-layout": "^8.0.4"
   },
   "scripts": {
