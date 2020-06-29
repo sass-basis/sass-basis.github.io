@@ -1,5 +1,5 @@
 {
-  "version": "11.0.2",
+  "version": "11.0.3",
   "main": "index.html",
   "author": "inc2734",
   "license": "MIT",
@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "jquery": "^3.5.1",
-    "sass-basis": "^11.0.2",
+    "sass-basis": "^11.0.3",
     "sass-basis-layout": "^8.0.4"
   },
   "scripts": {
@@ -35,22 +35,16 @@
     "clean:js": "rimraf public/assets/js && mkdir -p public/assets/js",
     "clean:img": "rimraf public/assets/images && mkdir -p public/assets/images",
     "clean:favicon": "rimraf public/favicon.ico",
-    "clean:font": "rimraf public/assets/font && mkdir -p public/assets/font",
     "clean:ejs": "rimraf public/*.html",
-    "css:style:sass": "node-sass --include-path=node_modules/node-normalize-scss src/css/style.scss -o public/assets/css",
-    "css:style:postcss": "postcss public/assets/css/style.css -o public/assets/css/style.min.css -c=postcss.config.js",
-    "css:style": "npm-run-all -s css:style:*",
-    "css:basis-ie9:sass": "node-sass --include-path=node_modules/node-normalize-scss src/css/basis-ie9.scss -o public/assets/css",
-    "css:basis-ie9:postcss": "postcss public/assets/css/basis-ie9.css -o public/assets/css/basis-ie9.min.css -c=postcss.config.js",
-    "css:basis-ie9": "npm-run-all -s css:basis-ie9:*",
+    "css:style": "node-sass src/css/style.scss public/assets/css/style.min.css && postcss -r public/assets/css/style.min.css -c=postcss.config.js",
+    "css:basis-ie9": "node-sass src/css/basis-ie9.scss public/assets/css/basis-ie9.min.css && postcss -r public/assets/css/basis-ie9.min.css -c=postcss.config.js",
     "css": "npm run clean:css && npm-run-all -p css:*",
     "js:app": "webpack src/js/app.js -o public/assets/js/app.min.js --config webpack.config.js",
     "js": "npm run clean:js && npm-run-all -p js:*",
     "img": "npm run clean:img && cpy '**' '../../public/assets/images' --cwd=src/images --parents",
     "favicon": "npm run clean:favicon && cpy 'src/favicon.ico' 'public'",
-    "font": "npm run clean:font && cpy 'node_modules/sass-basis/src/font/**' 'public/assets/font'",
     "ejs": "ejs-cli --base-dir src/ejs '*.ejs' --out public/ --options ejs.json",
-    "build": "npm-run-all -p css js img favicon font ejs",
+    "build": "npm-run-all -p css js img favicon ejs",
     "browsersync": "browser-sync start -s 'public' -f 'public'"
   }
 }
