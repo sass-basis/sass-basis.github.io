@@ -1,5 +1,5 @@
 {
-  "version": "12.4.0",
+  "version": "13.0.0",
   "main": "index.html",
   "author": "inc2734",
   "license": "MIT",
@@ -9,28 +9,28 @@
     "url": "https://github.com/sass-basis/sass-basis.github.io"
   },
   "devDependencies": {
-    "@babel/core": "^7.13.10",
-    "@babel/preset-env": "^7.13.10",
-    "@wordpress/browserslist-config": "^3.0.1",
+    "@babel/core": "^7.13.16",
+    "@babel/preset-env": "^7.13.15",
+    "@wordpress/browserslist-config": "^3.0.3",
     "autoprefixer": "^10.2.5",
     "babel-loader": "^8.2.2",
     "browser-sync": "^2.26.14",
     "cpy-cli": "^3.1.1",
-    "cssnano": "^4.1.10",
+    "cssnano": "^5.0.1",
     "ejs-cli": "^2.2.1",
     "node-sass": "^5.0.0",
     "normalize.css": "^8.0.1",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.2.8",
+    "postcss": "^8.2.10",
     "postcss-cli": "^8.3.1",
-    "postcss-import": "^14.0.0",
+    "postcss-import": "^14.0.1",
     "rimraf": "^3.0.2",
-    "webpack": "^5.25.1",
-    "webpack-cli": "^4.5.0"
+    "webpack": "^5.35.0",
+    "webpack-cli": "^4.6.0"
   },
   "dependencies": {
     "jquery": "^3.6.0",
-    "sass-basis": "^12.4.0",
+    "sass-basis": "^13.0.0",
     "sass-basis-layout": "^8.0.4"
   },
   "scripts": {

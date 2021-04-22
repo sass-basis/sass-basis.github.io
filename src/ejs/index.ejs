@@ -122,12 +122,12 @@
                   </section>
                 </div>
                 <div class="c-row__col c-row__col--1-1 c-row__col--md-2-3">
-                  <pre><code class="sass">@mixin _vertical-rhythm($font-size, $coefficient: 1) {
-$between-lines: _strip-unit(_rem2px($_between-lines));
-$base-line-height : _strip-unit(_rem2px($_base-line-height));
-$base-font-size: _strip-unit(_rem2px($_base-font-size));
-$font-size: _strip-unit($font-size);
-...</code></pre>
+                  <pre><code class="sass">.font-size-10 {
+  @include _font-size-line-height(_strip-unit(10 / $_base-font-size-px));
+}
+.font-size-12 {
+  @include _font-size-line-height(_strip-unit(12 / $_base-font-size-px));
+}</code></pre>
                 </div>
               </div>
 

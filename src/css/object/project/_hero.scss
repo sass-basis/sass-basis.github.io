@@ -24,7 +24,7 @@
 
   &__title {
     @include _margin(.5, 0, 0);
-    @include _font-size-line-height($_base-font-size-px * 2);
+    @include _font-size-line-height(2);
     letter-spacing: 2px;
   }
 
@@ -36,7 +36,7 @@
 
   &__description {
     @include _margin(0, 0, 1.5);
-    @include _font-size-line-height($_base-font-size-px * 3);
+    @include _font-size-line-height(3);
     font-weight: 100;
     letter-spacing: 2px;
   }
