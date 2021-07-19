@@ -1,5 +1,5 @@
 {
-  "version": "14.0.1",
+  "version": "14.0.2",
   "main": "index.html",
   "author": "inc2734",
   "license": "MIT",
@@ -12,9 +12,9 @@
     "@babel/core": "^7.14.6",
     "@babel/preset-env": "^7.14.7",
     "@wordpress/browserslist-config": "^4.0.1",
-    "autoprefixer": "^10.2.6",
+    "autoprefixer": "^10.3.1",
     "babel-loader": "^8.2.2",
-    "browser-sync": "^2.27.3",
+    "browser-sync": "^2.27.4",
     "cpy-cli": "^3.1.1",
     "cssnano": "^5.0.6",
     "ejs-cli": "^2.2.1",
@@ -25,12 +25,12 @@
     "postcss-cli": "^8.3.1",
     "postcss-import": "^14.0.2",
     "rimraf": "^3.0.2",
-    "webpack": "^5.41.0",
+    "webpack": "^5.45.1",
     "webpack-cli": "^4.7.2"
   },
   "dependencies": {
     "jquery": "^3.6.0",
-    "sass-basis": "^14.0.1",
+    "sass-basis": "^14.0.2",
     "sass-basis-layout": "^8.0.4"
   },
   "scripts": {
