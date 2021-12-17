@@ -1,5 +1,5 @@
 {
-  "version": "15.0.2",
+  "version": "16.0.0",
   "main": "index.html",
   "author": "inc2734",
   "license": "MIT",
@@ -9,28 +9,28 @@
     "url": "https://github.com/sass-basis/sass-basis.github.io"
   },
   "devDependencies": {
-    "@babel/core": "^7.15.0",
-    "@babel/preset-env": "^7.15.0",
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
     "@wordpress/browserslist-config": "^4.1.0",
-    "autoprefixer": "^10.3.3",
-    "babel-loader": "^8.2.2",
-    "browser-sync": "^2.27.5",
+    "autoprefixer": "^10.4.0",
+    "babel-loader": "^8.2.3",
+    "browser-sync": "^2.27.7",
     "cpy-cli": "^3.1.1",
-    "cssnano": "^5.0.8",
-    "ejs-cli": "^2.2.1",
-    "node-sass": "^6.0.1",
+    "cssnano": "^5.0.13",
+    "ejs-cli": "^2.2.3",
+    "node-sass": "^7.0.0",
     "normalize.css": "^8.0.1",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.3.6",
-    "postcss-cli": "^8.3.1",
+    "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
     "postcss-import": "^14.0.2",
     "rimraf": "^3.0.2",
-    "webpack": "^5.51.1",
-    "webpack-cli": "^4.8.0"
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
   },
   "dependencies": {
     "jquery": "^3.6.0",
-    "sass-basis": "^15.0.2",
+    "sass-basis": "^16.0.0",
     "sass-basis-layout": "^8.0.4"
   },
   "scripts": {
@@ -40,7 +40,6 @@
     "clean:favicon": "rimraf public/favicon.ico",
     "clean:ejs": "rimraf public/*.html",
     "css:style": "node-sass src/css/style.scss public/assets/css/style.min.css && postcss -r public/assets/css/style.min.css -c=postcss.config.js",
-    "css:basis-ie9": "node-sass src/css/basis-ie9.scss public/assets/css/basis-ie9.min.css && postcss -r public/assets/css/basis-ie9.min.css -c=postcss.config.js",
     "css": "npm run clean:css && npm-run-all -p css:*",
     "js:app": "webpack ./src/js/app.js -o ./public/assets/js/ --output-filename app.min.js --config webpack.config.js",
     "js": "npm run clean:js && npm-run-all -p js:*",

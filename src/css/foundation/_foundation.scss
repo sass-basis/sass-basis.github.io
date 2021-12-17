@@ -3,8 +3,7 @@ body {
 }
 
 a {
-  transition: background-color $_transition-duration $_transition-function-timing,
-              color $_transition-duration $_transition-function-timing;
+  @include _transition(background-color, color);
   color: _dark($color-primary);
 }
 

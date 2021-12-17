@@ -1,15 +1,15 @@
 .#{$_prefix}l-header {
-  transition: background-color $_transition-duration $_transition-function-timing,
-              color $_transition-duration $_transition-function-timing;
+  @include _transition(background-color, color);
   z-index: 1;
   background-color: transparent;
+  color: _var-color-white();
 
   [data-scrolled="true"] & {
-    background-color: _dark($_color-text);
+    background-color: _var-dark-color-text();
   }
 
-  &, a {
-    color: #fff;
+  a {
+    color: inherit;
     text-decoration: none;
   }
 
@@ -22,8 +22,10 @@
   }
 
   .p-global-nav {
+    color: _var-color-white();
+
     a {
-      color: #fff;
+      color: inherit;
     }
   }
 
@@ -34,7 +36,7 @@
     transform: translateY(-50%);
 
     &__bar {
-      background-color: #fff;
+      background-color: _var-color-white();
     }
   }
 }

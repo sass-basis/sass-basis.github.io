@@ -42,7 +42,7 @@
 
   &__title {
     margin: 0;
-    color: #777;
+    color: _var-dark-color-gray();
     @include _font-size-line-height(1);
     font-weight: normal;
     padding: 0;
@@ -51,7 +51,7 @@
   &__lead {
     margin: 0;
     padding: 0;
-    color: $_color-gray;
+    color: _var-color-gray();
   }
 
   &__content {

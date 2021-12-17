@@ -1,10 +1,11 @@
 .#{$_prefix}c-drawer {
   $item-padding-coefficient: 1;
 
-  background-color: $_color-black;
+  background-color: _var-color-black();
+  color: _var-color-white();
 
-  &, a {
-    color: #fff;
+  a {
+    color: inherit;
   }
 
   &__menu {

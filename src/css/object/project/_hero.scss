@@ -3,6 +3,7 @@
   background-color: $color-primary;
   font-family: "Open sans", sans-serif;
   @include _padding(5, 0);
+  color: _var-color-white();
 
   &--full {
     height: 100vh;
@@ -10,8 +11,8 @@
     background-image: url(../images/photo-1431686969995-531930eb462f.jpg);
   }
 
-  &, a {
-    color: #fff;
+  a {
+    color: inherit;
   }
 
   .#{$_prefix}c-hero__header {

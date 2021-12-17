@@ -3,13 +3,14 @@
   bottom: 16px;
   right: 16px;
   @include _position(fixed, null, 16px, 16px, null);
+  color: _var-color-white();
 
   > a {
     display: block;
     @include _square(48px);
     overflow: hidden;
     background-color: rgba( 0, 0, 0, .8 );
-    color: #fff;
+    color: inherit;
     position: relative;
 
     > .fa {

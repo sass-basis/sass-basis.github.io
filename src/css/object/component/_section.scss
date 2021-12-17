@@ -7,9 +7,9 @@
   }
 
   &--bg {
-    background-color: #fcfcfc;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+    background-color: _var-lightest-color-gray();
+    border-top: 1px solid _var-lighter-color-gray();
+    border-bottom: 1px solid _var-lighter-color-gray();
   }
 
   &__title {
@@ -20,7 +20,7 @@
   }
 
   &--border {
-    border-bottom: 1px solid _lighter($_color-gray);
+    border-bottom: 1px solid _var-lighter-color-gray();
     @include _padding(2, 0);
 
     .c-section__h1 {

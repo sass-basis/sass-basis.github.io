@@ -9,13 +9,13 @@
   }
 
   &--ghost {
-    border: 1px solid #fff;
-    background-color: transparent;
+    border: 1px solid _var-color-white();
+    background-color: _var-background-color();
   }
 
   &--launch, &--download, &--buy {
     background-color: $color-primary;
-    color: #fff;
+    color: _var-color-white();
 
     @include _hover() {
       opacity: .8;

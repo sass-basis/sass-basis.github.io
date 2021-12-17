@@ -4,7 +4,7 @@
 @import 'footer';
 
 .#{$_prefix}l-container {
-  background-color: #fff;
+  background-color: _var-color-white();
   overflow: hidden;
 }
 
