@@ -1,5 +1,5 @@
 {
-  "version": "16.0.1",
+  "version": "16.0.2",
   "main": "index.html",
   "author": "inc2734",
   "license": "MIT",
@@ -16,7 +16,7 @@
     "babel-loader": "^8.2.3",
     "browser-sync": "^2.27.7",
     "cpy-cli": "^3.1.1",
-    "cssnano": "^5.0.13",
+    "cssnano": "^5.0.14",
     "ejs-cli": "^2.2.3",
     "node-sass": "^7.0.0",
     "normalize.css": "^8.0.1",
@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "jquery": "^3.6.0",
-    "sass-basis": "^16.0.1",
+    "sass-basis": "^16.0.2",
     "sass-basis-layout": "^8.0.4"
   },
   "scripts": {
