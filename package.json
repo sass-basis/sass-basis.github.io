@@ -1,5 +1,5 @@
 {
-  "version": "18.0.1",
+  "version": "18.0.2",
   "main": "index.html",
   "author": "inc2734",
   "license": "MIT",
@@ -11,7 +11,7 @@
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",
-    "@wordpress/browserslist-config": "^5.8.0",
+    "@wordpress/browserslist-config": "^5.9.0",
     "autoprefixer": "^10.4.13",
     "babel-loader": "^9.1.2",
     "browser-sync": "^2.27.11",
@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "jquery": "^3.6.3",
-    "sass-basis": "^18.0.1",
+    "sass-basis": "^18.0.2",
     "sass-basis-layout": "^8.0.4"
   },
   "scripts": {
