@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "jquery": "^3.6.3",
-    "sass-basis": "^18.1.1",
+    "sass-basis": "^18.1.3",
     "sass-basis-layout": "^8.0.4"
   },
   "scripts": {
