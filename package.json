@@ -1,12 +1,12 @@
 {
-	"engines": {
-		"node": ">=20.10.0",
-		"npm": ">=10.2.3"
-	},
-	"volta": {
-		"node": "20.11.1"
-	},
-  "version": "18.2.3",
+  "engines": {
+    "node": ">=20.10.0",
+    "npm": ">=10.2.3"
+  },
+  "volta": {
+    "node": "20.11.1"
+  },
+  "version": "18.2.4",
   "main": "index.html",
   "author": "inc2734",
   "license": "MIT",
@@ -37,7 +37,7 @@
   },
   "dependencies": {
     "jquery": "^3.7.1",
-    "sass-basis": "^18.2.3",
+    "sass-basis": "^18.2.4",
     "sass-basis-layout": "^8.0.4"
   },
   "scripts": {
