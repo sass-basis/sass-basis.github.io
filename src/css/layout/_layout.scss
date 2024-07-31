@@ -1,13 +1,13 @@
-@import '../../../node_modules/sass-basis-layout/src/css/layout/container';
+@use '../../../node_modules/sass-basis-layout/src/css/layout/container';
 
-@import 'header';
-@import 'footer';
+@forward 'header';
+@forward 'footer';
 
-.#{$_prefix}l-container {
-  background-color: _var-color-white();
+.l-container {
+  background-color: white;
   overflow: hidden;
 }
 
-.#{$_prefix}l-sub {
-  @include _padding-top(2);
+.l-sub {
+  padding-top: var(--_padding2);
 }

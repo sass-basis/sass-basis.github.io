@@ -1,7 +1,9 @@
+@use '../../../../node_modules/sass-basis/src/css/core';
+
 .c-copyright {
-  @include _font-size-line-height(14px);
-  @include _padding(1, 0, 2);
-  color: _var-color-gray();
+  @include core.set-font-size-level(-1);
+  padding: var(--_padding1) 0 var(--_padding2);
+  color: var(--_color-gray);
 
   a {
     color: inherit;

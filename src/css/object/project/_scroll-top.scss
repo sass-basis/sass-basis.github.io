@@ -1,20 +1,24 @@
+@use '../../../../node_modules/sass-basis/src/css/core';
+
 .p-scroll-top {
   position: fixed;
   bottom: 16px;
   right: 16px;
-  @include _position(fixed, null, 16px, 16px, null);
-  color: _var-color-white();
+  position: fixed;
+  inset: auto 1rem 1rem auto;
+  color: white;
 
   > a {
     display: block;
-    @include _square(48px);
+    @include core.square(48px);
     overflow: hidden;
     background-color: rgba( 0, 0, 0, .8 );
     color: inherit;
     position: relative;
 
     > .fa {
-      @include _position(absolute, 50%, null, null, 50%);
+      position: absolute;
+      inset: 50% auto auto 50%;
       transform: translate(-50%, -50%);
     }
   }

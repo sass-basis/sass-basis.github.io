@@ -1,11 +1,13 @@
-.#{$_prefix}l-header {
-  @include _transition(background-color, color);
+@use '../../../node_modules/sass-basis/src/css/core';
+
+.l-header {
+  @include core.transition(background-color, color);
   z-index: 1;
   background-color: transparent;
-  color: _var-color-white();
+  color: white;
 
   [data-scrolled="true"] & {
-    background-color: _var-dark-color-text();
+    background-color: var(--_dark-color-text);
   }
 
   a {
@@ -13,30 +15,30 @@
     text-decoration: none;
   }
 
-  > .#{$_prefix}c-container {
+  > .c-container {
     position: relative;
   }
 
   .p-site-branding {
-    padding: ($_base-line-height / 2) 0;
+    padding: var(--_padding-1) 0;
   }
 
   .p-global-nav {
-    color: _var-color-white();
+    color: white;
 
     a {
       color: inherit;
     }
   }
 
-  .#{$_prefix}c-hamburger-btn {
+  .c-hamburger-btn {
     position: absolute;
     top: 50%;
-    right: $_base-line-height;
+    right: var(--_global--line-height);
     transform: translateY(-50%);
 
     &__bar {
-      background-color: _var-color-white();
+      background-color: white;
     }
   }
 }

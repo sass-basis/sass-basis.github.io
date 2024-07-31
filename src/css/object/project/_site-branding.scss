@@ -1,7 +1,10 @@
+@use '../../core/mixin/mixin' as *;
+@use '../../../../node_modules/sass-basis/src/css/core';
+
 .p-site-branding {
   &__title {
     @include font-basis();
-    @include _font-size-line-height(2);
+    @include core.set-font-size-level(4);
     margin: 0;
 
     img {

@@ -1,13 +1,14 @@
+@use '../../../../node_modules/sass-basis/src/css/core';
+
 .p-hero {
-  @extend .#{$_prefix}c-hero;
-  background-color: $color-primary;
+  background-color: var(--color-primary);
   font-family: "Open sans", sans-serif;
-  @include _padding(5, 0);
-  color: _var-color-white();
+  padding: var(--_padding-1) 0;
+  color: white;
 
   &--full {
     height: 100vh;
-    @include _background-image-cover();
+    @include core.background-image-cover();
     background-image: url(../images/photo-1431686969995-531930eb462f.jpg);
   }
 
@@ -15,29 +16,29 @@
     color: inherit;
   }
 
-  .#{$_prefix}c-hero__header {
-    @include _padding(.5, 0);
+  .c-hero__header {
+    padding: var(--_padding-1) 0;
   }
 
-  .#{$_prefix}c-hero__content {
+  .c-hero__content {
     text-align: center;
   }
 
   &__title {
-    @include _margin(.5, 0, 0);
-    @include _font-size-line-height(2);
+    margin: var(--_margin-1) 0 0;
+    @include core.set-font-size-level(2);
     letter-spacing: 2px;
   }
 
   &__version {
-    @include _margin(0, 0, 1.5);
-    @include _font-size-line-height($_base-font-size-px - 2);
+    margin: 0 0 var(--_margin2);
+    @include core.set-font-size-level(-1);
     opacity: .8;
   }
 
   &__description {
-    @include _margin(0, 0, 1.5);
-    @include _font-size-line-height(3);
+    margin: 0 0 var(--_margin2);
+    @include core.set-font-size-level(5);
     font-weight: 100;
     letter-spacing: 2px;
   }

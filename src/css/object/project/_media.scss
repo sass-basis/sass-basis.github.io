@@ -1,9 +1,11 @@
+@use '../../../../node_modules/sass-basis/src/css/core';
+
 .p-media {
   background-color: transparent;
   box-shadow: none;
 
   &__figure {
-    margin-bottom: ($_base-line-height / 2);
+    margin-bottom: var(--_margin-2);
 
     &--circle {
       width: 51%;
@@ -42,8 +44,8 @@
 
   &__title {
     margin: 0;
-    color: _var-dark-color-gray();
-    @include _font-size-line-height(1);
+    color: var(--_dark-color-gray);
+    @include core.set-font-size-level(-1);
     font-weight: normal;
     padding: 0;
   }
@@ -51,11 +53,11 @@
   &__lead {
     margin: 0;
     padding: 0;
-    color: _var-color-gray();
+    color: var(--_color-gray);
   }
 
   &__content {
-    margin: ($_base-line-height / 2) 0 0;
+    margin: var(--_margin-1) 0 0;
     padding: 0;
   }
 }

@@ -1,7 +1,9 @@
-.p-global-nav {
-  @include _font-size-line-height(14px);
+@use '../../../../node_modules/sass-basis/src/css/core';
 
-  .#{$_prefix}c-navbar__item a {
-    @include _padding(.25, .5);
+.p-global-nav {
+  @include core.set-font-size-level(-1);
+
+  .c-navbar__item a {
+    padding: var(--_padding-2) var(--_padding-1);
   }
 }

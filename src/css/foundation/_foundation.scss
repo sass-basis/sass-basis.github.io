@@ -1,14 +1,20 @@
+@use '../../../node_modules/sass-basis/src/css/core';
+
 body {
   letter-spacing: 1px;
 }
 
 a {
-  @include _transition(background-color, color);
-  color: _dark($color-primary);
+  @include core.transition(background-color, color);
+  color: color-mix(in srgb, var(--color-primary), #000 20%);
 }
 
 .hljs, pre {
   background-color: #15191d;
+}
+
+.hljs {
+  padding: var(--_padding1);
 }
 
 pre {

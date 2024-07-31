@@ -1,23 +1,25 @@
+@use '../../../../node_modules/sass-basis/src/css/core';
+
 .c-btn {
-  @include _transition(all);
+  @include core.transition(all);
   border: none;
   border-radius: 3px;
-  @include _padding(.5, 1);
+  padding: var(--_padding-1) var(--_padding1);
 
   &--block {
     display: block;
   }
 
   &--ghost {
-    border: 1px solid _var-color-white();
-    background-color: _var-background-color();
+    border: 1px solid white;
+    background-color: transparent;
   }
 
   &--launch, &--download, &--buy {
-    background-color: $color-primary;
-    color: _var-color-white();
+    background-color: var(--color-primary);
+    color: white;
 
-    @include _hover() {
+    @include core.hover() {
       opacity: .8;
     }
 

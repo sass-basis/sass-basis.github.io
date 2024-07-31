@@ -1,41 +1,43 @@
-.c-section {
-  @include _content();
-  @include _padding(3, 0);
+@use '../../../../node_modules/sass-basis/src/css/core';
 
-  > .#{$_prefix}c-container {
-    @include _content();
+.c-section {
+  padding: var(--_padding3) 0;
+  @include core.set-content-level(1);
+
+  > .c-container {
+    @include core.set-content-level(1);
   }
 
   &--bg {
-    background-color: _var-lightest-color-gray();
-    border-top: 1px solid _var-lighter-color-gray();
-    border-bottom: 1px solid _var-lighter-color-gray();
+    background-color: var(--_lightest-color-gray);
+    border-top: 1px solid var(--_lighter-color-gray);
+    border-bottom: 1px solid var(--_lighter-color-gray);
   }
 
   &__title {
-    @include _font-size-line-height(2);
-    @include _margin(0, 0, 2);
+    @include core.set-font-size-level(4);
+    margin: 0 0 var(--_margin2);
     font-weight: normal;
     text-align: center;
   }
 
   &--border {
-    border-bottom: 1px solid _var-lighter-color-gray();
-    @include _padding(2, 0);
+    border-bottom: 1px solid var(--_lighter-color-gray);
+    padding: var(--_padding2) 0;
 
     .c-section__h1 {
-      @include _margin(0, 0, 1.5);
-      @include _font-size-line-height(2.5rem);
+      margin: 0 0 var(--_margin2);
+      @include core.set-font-size-level(3);
     }
 
     .c-section__h2 {
-      @include _margin(1.5, 0, 1);
-      @include _font-size-line-height(2rem);
+      margin: var(--_margin2) 0 var(--_margin1);
+      @include core.set-font-size-level(2);
     }
 
     .c-section__h3 {
-      @include _margin(1.5, 0, 1);
-      @include _font-size-line-height(1.5rem);
+      margin: var(--_margin2) 0 var(--_margin1);
+      @include core.set-font-size-level(2);
     }
   }
 }
