@@ -8,8 +8,6 @@
 
   &--full {
     height: 100vh;
-    @include core.background-image-cover();
-    background-image: url(../images/photo-1431686969995-531930eb462f.jpg);
   }
 
   a {
