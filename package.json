@@ -6,7 +6,7 @@
   "volta": {
     "node": "20.11.1"
   },
-  "version": "19.0.0",
+  "version": "19.0.1",
   "main": "index.html",
   "author": "inc2734",
   "license": "MIT",
@@ -37,7 +37,7 @@
   },
   "dependencies": {
     "jquery": "^3.7.1",
-    "sass-basis": "^19.0.0",
+    "sass-basis": "^19.0.1",
     "sass-basis-layout": "^9.0.0"
   },
   "scripts": {
