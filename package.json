@@ -6,7 +6,7 @@
   "volta": {
     "node": "20.11.1"
   },
-  "version": "19.0.4",
+  "version": "19.0.5",
   "main": "index.html",
   "author": "inc2734",
   "license": "MIT",
@@ -16,9 +16,9 @@
     "url": "https://github.com/sass-basis/sass-basis.github.io"
   },
   "devDependencies": {
-    "@babel/core": "^7.25.9",
-    "@babel/preset-env": "^7.25.9",
-    "@wordpress/browserslist-config": "^6.10.0",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@wordpress/browserslist-config": "^6.11.0",
     "autoprefixer": "^10.4.20",
     "babel-loader": "^9.2.1",
     "browser-sync": "^3.0.3",
@@ -31,13 +31,13 @@
     "postcss-cli": "^11.0.0",
     "postcss-import": "^16.1.0",
     "rimraf": "^6.0.1",
-    "sass": "^1.80.3",
-    "webpack": "^5.95.0",
+    "sass": "^1.80.6",
+    "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
     "jquery": "^3.7.1",
-    "sass-basis": "^19.0.4",
+    "sass-basis": "^19.0.5",
     "sass-basis-layout": "^9.0.0"
   },
   "scripts": {
